@@ -1,0 +1,58 @@
+.buttons__container
+  display: flex
+
+.button
+  position: relative
+  overflow: hidden
+  text-align: center
+  font-size: 1.4rem
+  line-height: 1.7rem
+  color: $white
+  box-sizing: border-box
+  display: block
+  min-width: 107px
+  padding: 10px 15px 9px
+  cursor: pointer
+  text-decoration: none
+  border-radius: 2px
+  background-color: $blue
+  text-transform: uppercase
+  transition: all $fast
+  font-family: $main
+  border: 0
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .3)
+  transition: all $fast
+  z-index: 40
+
+  &:hover
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .3)
+
+  &_sec
+    @extend .button
+    background-color: $white
+    color: $blue
+
+  &__container
+    display: flex
+    justify-content: flex-end
+
+.button
+  input
+    position: absolute
+    display: block
+    left: 0
+    top: 0
+    width: 800px
+    height: 300px
+    cursor: pointer
+    border: 0
+    opacity: 0
+
+.button__browse
+  input[type="file"]
+    font: 199px Verdana, sans-serif
+    position: absolute
+    top: -30px
+    right: -20px
+    cursor: pointer
+    opacity: 0

@@ -1,0 +1,21 @@
+=clearfix()
+  &:after
+    content: ''
+    display: block
+    clear: both
+    visibility: hidden
+    height: 0
+    line-height: 0
+    font-size: 0
+
+=placeholder()
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &:placeholder
+    @content

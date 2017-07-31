@@ -1,0 +1,101 @@
+.partners
+  width: calc(100% + 32px)
+  margin: 0 -16px
+  overflow: hidden
+  padding: 36px 0 70px
+  position: relative
+
+  .swiper-pagination
+    bottom: 24px
+
+  .swiper-pagination-bullet
+    width: 4px
+    height: 4px
+    border-radius: 50%
+    border: 1px solid $white
+    margin: 0 2px !important
+    background-color: #8799ff
+    opacity: 1
+
+  .swiper-pagination-bullet-active
+    border-color: $blue
+    background-color: $blue
+
+  &__container
+    padding: 64px 0 0
+
+  &__descr
+    font-size: 1.6rem
+    line-height: 1.8rem
+    padding: 24px 0 0
+
+  &__wrap
+    display: flex
+    align-items: stretch
+
+  &__block
+    flex: 1 0 auto
+    width: 85%
+    background: #F7F9FF
+    // margin-right: 16px
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .24)
+    padding: 131px 16px 24px
+    box-sizing: border-box
+    position: relative
+    color: $black
+
+  &__logo
+    display: block
+    position: absolute
+    left: 16px
+    top: 24px
+
+  &__name
+    font-size: 1.6rem
+    line-height: 1.8rem
+    margin-bottom: 14px
+    font-weight: normal
+
+  &__info
+    font-size: 1.4rem
+    line-height: 2.4rem
+
+  &__logo
+    margin-bottom: 24px
+    display: block
+
+
+@media ($desktop)
+
+  .swiper-pagination
+    display: none
+
+  .partners
+    padding-top: 13px
+    padding-bottom: 0
+    overflow: visible
+
+    &__descr
+      font-size: 2.4rem
+      line-height: 3.4rem
+
+    &__wrap
+      transform: translate(0, 0) !important
+      flex-wrap: wrap
+      justify-content: space-between
+
+    &__block
+      width: calc(33.3% - 27px)
+      box-sizing: border-box
+      margin-top: 33px
+      flex: auto 0 0
+
+    &__name
+      font-size: 1.8rem
+      line-height: 2.1rem
+      font-weight: normal
+      margin-bottom: 10px
+
+    &__descr
+      font-size: 2.4rem
+      line-height: 3.4rem

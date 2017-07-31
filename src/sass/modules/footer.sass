@@ -1,0 +1,281 @@
+.footer
+  background: linear-gradient(#644EBF, #262448)
+  color: $white
+  padding: 34px 0 24px
+  position: relative
+
+  &__scrolltop
+    width: 56px
+    height: 56px
+    display: block
+    position: absolute
+    right: 8px
+    top: -28px
+    border-radius: 50%
+    cursor: pointer
+    background: $white
+    box-shadow: 0 0 6px rgba(0, 0, 0, .12), 0 6px 6px rgba(0, 0, 0, .24)
+    transition: all $fast
+
+    &:hover
+      box-shadow: 0 0 6px rgba(0, 0, 0, .12), 0 8px 12px rgba(0, 0, 0, .3)
+
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left: 24px
+      top: 26px
+      box-sizing: border-box
+      width: 9px
+      height: 9px
+      border: solid $blue
+      border-width: 2px 0 0 2px
+      transform: rotate(45deg)
+
+  .wrap
+    display: flex
+    flex-wrap: wrap
+    align-items: flex-start
+
+  &__section
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    width: 60%
+
+    .footer__block_social
+      display: none
+
+  &__block
+
+    &_logo
+      width: 100%
+
+    &_nav
+      width: 40%
+      margin-bottom: 21px
+
+    &_contacts
+      width: 100%
+      margin-bottom: 21px
+
+    &_social
+      width: 100%
+
+  &__title
+    font-size: 1.6rem
+    text-transform: uppercase
+    color: $white
+    opacity: .6
+    margin-bottom: 10px
+    font-weight: normal
+
+  &__logo-block
+    margin-bottom: 18px
+    position: relative
+    display: inline-block
+
+  &__logo
+    color: #D9A162
+    font-size: 2.5rem
+    line-height: 2.9rem
+    letter-spacing: -.84px
+    text-shadow: 0 1px 1px rgba(0, 0, 0, .24)
+
+    &-color
+      color: #4B8FB9
+
+  &__beta
+    width: 40px
+    text-align: right
+    position: absolute
+    right: -48px
+    top: -10px
+    font-size: 1.2rem
+    line-height: 1.5rem
+    letter-spacing: -.35px
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .24)
+
+  &__download
+    display: none
+
+  &__nav
+    font-size: 1.4rem
+    line-height: 1.7rem
+    display: flex
+    flex-direction: column
+
+    a
+      margin-bottom: 9px
+      color: $white
+
+      &:hover
+        text-decoration: underline
+
+      &:last-child
+        margin-bottom: 0
+
+  &__contacts
+    font-size: 1.4rem
+    line-height: 1.7rem
+    font-weight: 300
+
+    a
+      font-weight: 400
+      color: #768FFF
+
+      &:hover
+        text-decoration: underline
+
+    dd
+      margin-bottom: 18px
+
+      &:last-child
+        margin-bottom: 0
+
+  &__copy
+    font-style: normal
+    font-size: 1.4rem
+    line-height: 1.7rem
+    width: 100%
+    font-weight: 300
+
+  &__social
+    display: flex
+    flex-wrap: wrap
+    width: 200px
+    margin-bottom: 8px
+    flex-direction: row
+
+    a
+      display: block
+      width: 32px
+      height: 32px
+      margin: 0 16px 16px 0
+
+  &__i
+    display: block
+    width: 32px
+    height: 32px
+    fill: rgba(255,255,255,.6)
+    transition: fill $fast
+
+    &:hover
+      fill: rgba(255,255,255,1)
+
+  &__subscribe
+    border-radius: 2px
+    background: rgba(255, 255, 255, .1)
+    padding: 8px 16px 14px
+    margin-bottom: 24px
+    box-sizing: border-box
+    width: 100%
+
+    .field__block
+      padding-top: 15px
+
+@media ($tablet)
+
+  .footer
+
+    &__block
+
+      &_nav
+        width: 30%
+
+      &_social
+        width: 35%
+
+    &__beta
+      display: none
+
+    &__section
+      width: 35%
+
+    &__subscribe
+      width: 70%
+
+
+@media ($desktop)
+
+  .footer
+    background: linear-gradient(-125deg, #644EBF, #262448)
+    padding-top: 42px
+
+    &__scrolltop
+      right: 50px
+
+    &__subscribe
+      margin-top: 32px
+      padding-top: 14px
+
+      .field__block
+        padding-top: 11px
+
+    &__logo-block
+      margin-bottom: 26px
+
+    &__block
+
+      &_logo
+        width: 30%
+
+      &_nav
+        width: 20%
+        padding-top: 4px
+
+      &_contacts
+        width: 100%
+        margin-bottom: 0
+        padding-top: 4px
+
+      &_social
+        display: none
+
+    &__copy
+      width: 250px
+
+    &__section
+      width: 25%
+
+      .footer__block_social
+        display: block
+        width: 100%
+
+    &__subscribe
+      width: 25%
+      margin-top: 30px
+
+    &__contacts
+      margin-bottom: 38px
+      font-size: 1.6rem
+      line-height: 2rem
+
+      dd
+        margin-bottom: 13px
+
+    &__download
+      display: block
+      list-style: none
+      font-size: 1.6rem
+      line-height: 2rem
+
+      li
+        margin-bottom: 24px
+
+        &:last-child
+          margin-bottom: 0
+
+      a
+        color: #768FFF
+
+        &:hover
+          text-decoration: underline
+
+    &__nav
+      font-size: 1.8rem
+      line-height: 2.1rem
+
+      a
+        margin-bottom: 13px

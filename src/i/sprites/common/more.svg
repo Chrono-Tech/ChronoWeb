@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>open-in-new</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-320" transform="translate(-18.000000, -8443.000000)" fill-rule="nonzero" fill="#2962FF">
+            <g id="Press" transform="translate(16.000000, 8150.000000)">
+                <g id="Group-3" transform="translate(0.000000, 57.000000)">
+                    <g id="read-full-art" transform="translate(2.000000, 236.000000)">
+                        <g id="open-in-new">
+                            <path d="M11,0 L11,2 L14.59,2 L4.76,11.83 L6.17,13.24 L16,3.41 L16,7 L18,7 L18,0 L11,0 Z M16,16 L2,16 L2,2 L9,2 L9,0 L2,0 C0.89,0 0,0.9 0,2 L0,16 C0,17.1045695 0.8954305,18 2,18 L16,18 C17.1045695,18 18,17.1045695 18,16 L18,9 L16,9 L16,16 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,92 @@
+.contacts
+  padding: 64px 16px 32px
+  margin: 0 -16px
+  background-color: #F7F9FF
+
+  &__container
+    display: block
+
+  &__list
+    padding-top: 32px
+    font-size: 1.6rem
+    line-height: 2rem
+
+    dt,
+    dd
+      position: relative
+      margin: 0 0 0 56px
+
+    dd
+      margin-bottom: 24px
+
+      &:last-child
+        margin-bottom: 0
+
+    a
+
+      &:hover
+        text-decoration: underline
+
+  &__i
+    position: absolute
+    width: 32px
+    height: 32px
+    display: block
+    left: -56px
+    top: 4px
+
+  &__form
+    padding: 32px 0 64px
+
+    .button__container
+      padding-top: 9px
+
+  &__title
+    font-size: 1.6rem
+    line-height: 1.8rem
+    margin-bottom: 26px
+    font-weight: normal
+
+@media ($tablet)
+
+  .contacts
+    margin: 0
+    margin-left: -30px
+    width: calc(50% + 30px)
+    padding-left: 30px
+    box-sizing: border-box
+
+    &__container
+
+      .wrap
+        display: flex
+
+    &__form
+      width: 50%
+
+    &__inner
+      margin: 0 auto
+      width: 75%
+
+@media ($desktop)
+
+  .contacts
+    margin-left: -50px
+    width: calc(50% + 50px)
+    padding-left: 50px
+
+    &__list
+      font-size: 1.8rem
+      line-height: 2.2rem
+      padding-top: 38px
+      padding-bottom: 136px
+
+      dd
+        margin-bottom: 27px
+
+    &__title
+      font-size: 2.4rem
+      line-height: 3.4rem
+
+    &__form
+      padding: 104px 0 64px

@@ -1,0 +1,45 @@
+footer.footer
+  .wrap
+    a(href="#body").footer__scrolltop.js-scrollto
+    .footer__block.footer__block_logo
+      .footer__logo-block
+        .footer__logo #[span.footer__logo-color Chrono]bank.io
+        .footer__beta beta 10.0
+      ul.footer__download
+        li #[a(href="#") Download] Business outline
+        li #[a(href="#") Download] Development plan
+        li #[a(href="#") Download] White paper
+    .footer__block.footer__block_nav
+      h4.footer__title MENU
+      nav.footer__nav
+        each item in ["ChronoMint", "LaborX", "Team", "FAQ", "Blog", "Contacts"]
+          a(href="#")= item
+    .footer__section
+      .footer__block.footer__block_contacts
+        h4.footer__title contacts us
+        dl.footer__contacts
+          dt Technical support: 
+          dd 
+            a(href="mailto:support@chronobank.io") support@chronobank.io
+          dt General inquiries:
+          dd 
+            a(href="mailto:info@chronobank.io") info@chronobank.io
+      .footer__block.footer__block_social
+        h4.footer__title social network
+        nav.footer__social
+          each item in ["facebook", "twitter", "instagram", "reddit", "slack", "telegram", "github"]
+            a(href="#" target="_blank")
+              +svg('footer__i', item)
+    .footer__block.footer__block_social
+      h4.footer__title social network
+      nav.footer__social
+        each item in ["facebook", "twitter", "instagram", "reddit", "slack", "telegram", "github"]
+          a(href="#" target="_blank")
+            +svg('footer__i', item)
+    form(action="" name="subscribe").footer__subscribe.js-validate
+      h4.footer__title newsletter
+      .field__block
+        input(type="email" placeholder="Enter email for news" required).field
+      .button__container
+        input(type="submit" value="subscribe").button_sec
+    address.footer__copy Copyright ©2017 Edway Group Pty. Ltd. All Rights Reserved.

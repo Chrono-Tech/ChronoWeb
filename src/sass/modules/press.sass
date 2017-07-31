@@ -1,0 +1,133 @@
+.press
+  margin-top: -8px
+
+  &__container
+    background: #F7F9FF
+    padding: 32px 0 44px
+    position: relative
+
+  &__buttons
+    position: absolute
+    bottom: -15px
+    left: 0
+    right: 0
+    display: flex
+    justify-content: center
+
+  &__block
+    padding: 32px 0 21px
+    border-bottom: 1px solid $blue
+
+    &:last-child
+      border-bottom: 0
+
+  &__logo
+    display: block
+    margin-bottom: 24px
+
+    &_big
+      display: none
+
+  &__title
+    font-weight: normal
+    margin-bottom: 16px
+    font-size: 1.6rem
+    line-height: 1.8rem
+
+  &__descr
+    font-style: italic
+    font-size: 1.6rem
+    line-height: 2rem
+    margin-bottom: 16px
+
+  &__more
+    display: inline-block
+    position: relative
+    font-size: 1.4rem
+    line-height: 1.7rem
+    padding-left: 34px
+    font-weight: bold
+
+    &:hover
+      text-decoration: underline
+
+  &__i
+    position: absolute
+    width: 18px
+    height: 18px
+    left: 0
+    top: -1px
+    display: block
+
+@media ($tablet)
+
+  .press
+
+    &__descr
+      width: 75%
+
+@media ($desktop)
+
+  .press
+    margin-top: -20px
+
+    &__container
+      background: none
+      padding: 68px 0 0
+
+    &__descr
+      width: 100%
+
+    &__block
+      display: flex
+      padding: 0
+
+      &:first-child
+
+        .press__inner
+          padding-top: 61px
+
+        .press__pic
+          padding-top: 60px
+
+      &:last-child
+
+        .press__inner
+          padding-bottom: 82px
+
+    &__pic
+      width: 50%
+      box-sizing: border-box
+      padding: 32px 112px 32px 0
+      display: flex
+      justify-content: flex-end
+      align-items: flex-start
+
+    &__inner
+      background: #F7F9FF
+      width: 50%
+      padding: 32px 16px 29px
+      box-sizing: border-box
+
+    &__title
+      margin-bottom: 25px
+      font-size: 2.4rem
+      line-height: 2.8rem
+
+    &__descr
+      font-size: 1.8rem
+      line-height: 2.2rem
+      margin-bottom: 24px
+
+    &__more
+      font-size: 1.6rem
+      line-height: 2rem
+
+    &__i
+      top: 0
+
+    &__logo
+      display: none
+
+      &_big
+        display: block

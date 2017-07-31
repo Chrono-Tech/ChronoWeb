@@ -1,0 +1,10 @@
+include ../mixins/svg.pug
+doctype html
+html(lang="en")
+  head
+    include head.pug
+  body#body
+    .svg
+      include ../../../dist/i/common.svg
+    .page.js-wrap
+      block body

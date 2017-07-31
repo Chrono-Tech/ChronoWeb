@@ -1,0 +1,216 @@
+.about
+  padding: 64px 0 0
+
+  .title
+    margin-bottom: 24px
+
+  &__descr
+    font-size: 1.6rem
+    line-height: 1.8rem
+    margin-bottom: 46px
+
+  &__wrap
+    display: flex
+    flex-direction: column-reverse
+    margin-bottom: 12px
+
+    &_dark
+      background: #F7F9FF
+      margin: 0 -16px 32px
+      padding: 24px 16px 33px
+
+      .about__legend
+        margin: 0 10px 16px
+        padding-top: 8px
+
+  &__legend
+    font-size: 1.6rem
+    line-height: 2rem
+    font-weight: 300
+    color: $blue
+    text-align: center
+    margin: 0 10px
+
+  &__img
+    display: block
+    width: 100%
+    margin-bottom: 31px
+
+    &_margin
+      margin: 0
+
+  &__text
+    font-size: 1.4rem
+    line-height: 2.4rem
+
+    b
+      font-weight: bold
+      color: #FFAB00
+
+    p
+      display: none
+      margin-bottom: 24px
+
+    .about__main
+      display: block
+
+  &__title
+    font-size: 1.6rem
+    line-height: 1.8rem
+    font-weight: normal
+    margin-bottom: 18px
+
+  &__list
+    background: #F7F9FF
+    box-shadow: 0 8px 16px rgba(0,0,0,.24)
+    margin-bottom: 32px
+    padding: 32px 16px
+
+    &-title
+      font-size: 1.6rem
+      line-height: 1.8rem
+      font-weight: normal
+      margin-bottom: 34px
+
+    &-block
+      padding: 70px 0 32px
+      position: relative
+      list-style: none
+
+      &:last-child
+        padding-bottom: 0
+
+    &-name
+      font-size: 1.6rem
+      line-height: 1.8rem
+      margin-bottom: 10px
+      font-weight: normal
+
+    &-descr
+      font-size: 1.4rem
+      line-height: 2.4rem
+
+  &__i
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    width: 54px
+    height: 54px
+
+
+@media ($tablet)
+
+  .about
+
+    &__wrap
+
+      &_dark
+        margin-left: -30px
+        margin-right: -30px
+        padding-left: 30px
+        padding-right: 30px
+
+    &__list
+      padding: 40px 37px 0
+      position: relative
+      z-index: 20
+
+      &-title
+        font-size: 2.4rem
+        line-height: 2.8rem
+        text-align: center
+        margin-bottom: 41px
+
+      &-container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+      &-block
+        width: 47%
+
+
+@media ($desktop)
+
+  .about
+    padding-top: 69px
+
+    &__title
+      font-size: 2.4rem
+      line-height: 3.4rem
+      margin-bottom: 40px
+
+    &__pic
+      width: 58%
+      flex: 1 0 auto
+      padding-top: 23px
+
+      &_margin
+        padding-top: 0
+
+    &__legend
+      font-size: 2rem
+      line-height: 2.4rem
+      margin: 0 auto
+      width: 90%
+
+    &__img
+      width: 90%
+      margin-bottom: 31px
+
+    &__text
+      font-size: 1.6rem
+      width: 40%
+      flex: 1 0 auto
+
+      p
+        display: block
+
+    .title
+      margin-bottom: 18px
+
+    &__descr
+      font-size: 2.4rem
+      line-height: 3.4rem
+      margin-bottom: 37px
+      width: 75%
+
+    &__wrap
+      flex-direction: row
+      justify-content: space-between
+      align-items: flex-start
+
+      .about__img
+        margin-left: auto
+
+      &_dark
+        margin-left: -50px
+        margin-right: -50px
+        padding-left: 50px
+        padding-right: 50px
+
+        .about__img
+          margin-left: 0
+
+
+    &__list
+      padding-bottom: 0
+
+      &-container
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+      &-block
+        width: 23%
+        padding: 80px 0 42px
+
+      &-name
+        font-size: 1.8rem
+        line-height: 2.1rem
+        margin-bottom: 11px
+
+      &-descr
+        font-size: 1.6rem
+        line-height: 2.4rem
