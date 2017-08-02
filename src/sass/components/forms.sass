@@ -11,6 +11,10 @@
   font-weight: 300
   outline: none
   border-radius: 0
+  transition: all $fast
+
+  &:focus
+    border-bottom: 1px solid rgba(255, 255, 255, 1)
 
   +placeholder()
     color: rgba(255, 255, 255, .6)
@@ -27,7 +31,7 @@
     font-size: 1.6rem
     line-height: 2rem
     border: 0
-    border-bottom: 2px solid #2962FF
+    border-bottom: 2px solid #abc0ff
     width: 100%
     box-sizing: border-box
     background: none
@@ -37,6 +41,7 @@
     min-height: 56px
     padding: 28px 16px 6px
     border-radius: 4px
+    transition: all $fast
 
   &__label
     position: absolute
@@ -58,6 +63,9 @@
       font-size: 1.2rem
       line-height: 1.5rem
       padding-top: 6px
+
+    .field_2
+      border-color: #2962FF
 
 textarea.field_2
   height: 128px
