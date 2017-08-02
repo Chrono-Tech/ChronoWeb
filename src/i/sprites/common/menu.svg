@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox-marked-circle copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-320-Copy" transform="translate(-192.000000, -123.000000)" fill-rule="nonzero" fill="#2962FF">
+            <g id="Menu-language" transform="translate(176.000000, 111.000000)">
+                <g id="Group-6" transform="translate(0.000000, 8.000000)">
+                    <g id="Group-5" transform="translate(16.000000, 3.000000)">
+                        <g id="checkbox-marked-circle-copy-3" transform="translate(0.000000, 1.000000)">
+                            <path d="M6.4,12 L2.4,8 L3.528,6.864 L6.4,9.736 L12.472,3.664 L13.6,4.8 L6.4,12 Z M8,3.55271368e-16 C3.581722,-1.42108547e-15 3.55271368e-16,3.581722 0,8 C-1.0658141e-15,10.1217319 0.842854723,12.1565632 2.34314575,13.6568542 C3.84343678,15.1571453 5.87826808,16 8,16 C10.1217319,16 12.1565632,15.1571453 13.6568542,13.6568542 C15.1571453,12.1565632 16,10.1217319 16,8 C16,5.87826808 15.1571453,3.84343678 13.6568542,2.34314575 C12.1565632,0.842854723 10.1217319,1.77635684e-16 8,3.55271368e-16 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

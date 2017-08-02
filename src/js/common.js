@@ -47,6 +47,31 @@ function animateScroll(el, e) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+
+  // Nav
+  $('.nav__i').on('click', function() {
+    $('.nav__block').fadeIn(300);
+  })
+  $('.js-close-menu').on('click', function() {
+    $('.nav__block').fadeOut(300);
+  })
+  $(document).keyup(function(e) {
+     if (e.keyCode == 27) {
+        $('.nav__block').fadeOut(300);
+    }
+  });
+  $('.js-nav-sec').on('click', function(e) {
+    var self = $(this).next();
+    if (self.css('display') === 'none') {
+      self.fadeIn(300);
+    } else {
+      self.fadeOut(300);
+    }
+    e.preventDefault();
+  })
+
+
+  // Video
   $('.js-video').on('click', function() {
     $('.header__video-container').addClass('header__video_opened');
   })
