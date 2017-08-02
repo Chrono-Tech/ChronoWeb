@@ -27,15 +27,37 @@ footer.footer
       .footer__block.footer__block_social
         h4.footer__title social network
         nav.footer__social
-          each item in ["facebook", "twitter", "instagram", "reddit", "slack", "telegram", "github"]
-            a(href="#" target="_blank")
-              +svg('footer__i', item)
+          a(href="https://www.facebook.com/ChronoBank.io" target="_blank")
+            +svg('footer__i', 'facebook')
+          a(href="https://twitter.com/ChronobankNews" target="_blank")
+            +svg('footer__i', 'twitter')
+          //- a(href="#" target="_blank")
+          //-   +svg('footer__i', 'instagram')
+          a(href="https://www.reddit.com/r/ChronoBank/" target="_blank")
+            +svg('footer__i', 'reddit')
+          a(href="https://chronobank.herokuapp.com/" target="_blank")
+            +svg('footer__i', 'slack')
+          a(href="https://telegram.me/chronobank" target="_blank")
+            +svg('footer__i', 'telegram')
+          a(href="https://github.com/ChronoBank" target="_blank")
+            +svg('footer__i', 'github')
     .footer__block.footer__block_social
       h4.footer__title social network
       nav.footer__social
-        each item in ["facebook", "twitter", "instagram", "reddit", "slack", "telegram", "github"]
-          a(href="#" target="_blank")
-            +svg('footer__i', item)
+        a(href="https://www.facebook.com/ChronoBank.io" target="_blank")
+          +svg('footer__i', 'facebook')
+        a(href="https://twitter.com/ChronobankNews" target="_blank")
+          +svg('footer__i', 'twitter')
+        //- a(href="#" target="_blank")
+        //-   +svg('footer__i', 'instagram')
+        a(href="https://www.reddit.com/r/ChronoBank/" target="_blank")
+          +svg('footer__i', 'reddit')
+        a(href="https://chronobank.herokuapp.com/" target="_blank")
+          +svg('footer__i', 'slack')
+        a(href="https://telegram.me/chronobank" target="_blank")
+          +svg('footer__i', 'telegram')
+        a(href="https://github.com/ChronoBank" target="_blank")
+          +svg('footer__i', 'github')
     form(action="" name="subscribe").footer__subscribe.js-validate
       h4.footer__title newsletter
       .field__block

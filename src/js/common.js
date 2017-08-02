@@ -47,6 +47,18 @@ function animateScroll(el, e) {
 
 document.addEventListener('DOMContentLoaded', function() {
 
+  $('.js-video').on('click', function() {
+    $('.header__video-container').addClass('header__video_opened');
+  })
+  $('.header__video-container').on('click', function() {
+    $('.header__video-container').removeClass('header__video_opened');
+  })
+  $(document).keyup(function(e) {
+     if (e.keyCode == 27) {
+        $('.header__video-container').removeClass('header__video_opened');
+    }
+  });
+
   // initFonts();
   //
   document.addEventListener('click', toggle, false);

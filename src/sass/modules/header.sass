@@ -8,6 +8,60 @@
   position: relative
   opacity: 0
 
+  &__video
+
+    &-container
+      position: fixed
+      left: 0
+      top: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,.65)
+      display: flex
+      align-items: center
+      justify-content: center
+      z-index: 100
+      @extend .hide
+
+    &_opened
+      @extend .show
+
+    &-close
+      width: 26px
+      height: 26px
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+      padding: 30px
+      transform: rotate(45deg)
+      cursor: pointer
+
+      &::before,
+      &::after
+        content: ''
+        display: block
+        position: absolute
+        background: $white
+
+      &::before
+        width: 26px
+        height: 2px
+        top: 42px
+        left: 30px
+
+      &::after
+        height: 26px
+        width: 2px
+        left: 42px
+        top: 30px
+
+    &-block
+
+      iframe
+        width: 300px
+        height: 168px
+
   .footer__beta
     color: $white
     top: -8px
@@ -61,7 +115,7 @@
   position: absolute
   right: 0
   top: 0
-  display: none
+
 
 
 @media ($tablet)
@@ -71,6 +125,14 @@
     background-size: cover
     padding-top: 0
     padding-bottom: 0
+
+    &__video
+
+      &-block
+
+        iframe
+          width: 560px
+          height: 315px
 
     &__news
       position: absolute
@@ -144,6 +206,14 @@
 @media ($desktop)
 
   .header
+
+    &__video
+
+      &-block
+
+        iframe
+          width: 800px
+          height: 450px
 
     &__news
       display: flex

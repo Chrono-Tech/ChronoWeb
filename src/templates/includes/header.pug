@@ -1,3 +1,8 @@
+.header__video-container
+  .header__video-close
+  .header__video-block
+    //- <iframe width="560" height="315" src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
 header.header.js-first-slide
   .wrap
     .footer__logo-block
@@ -9,25 +14,63 @@ header.header.js-first-slide
       | | How I rediscovered my love for JavaScript after throwing 90% of it in the trash.
     .nav
       .nav__i
-      ul.nav__list
-        li.nav__item
-          a(href="#") Products
-        li.nav__item
-          a(href="#") Team
-        li.nav__item
-          a(href="#") FAQ
-        li.nav__item
-          a(href="#") Blog
-        li.nav__item
-          a(href="#") Contacts
-        li.nav__item
-          a(href="#") Login
-        li.nav__item
-          a(href="#") Eng
+      .nav__block
+        ul.nav__list
+          li.nav__item
+            a(href="#").nav__item Products
+            ul.nav__products
+              li
+                a(href="#")
+                  img(src="../i/nav_logo1.png" srcset="../i/@2x/nav_logo1.png 2x").nav__products-logo
+                  .nav__products-name ChronoMint
+                  .nav__products-descr Our product helps people lorem ipsum subtitle
+              li
+                a(href="#")
+                  img(src="../i/nav_logo2.png" srcset="../i/@2x/nav_logo2.png 2x").nav__products-logo
+                  .nav__products-name LaborX
+                  .nav__products-descr Our product helps people lorem ipsum subtitle
+          li.nav__item
+            a(href="#").nav__item Team
+          li.nav__item
+            a(href="#").nav__item FAQ
+          li.nav__item
+            a(href="#").nav__item Blog
+          li.nav__item
+            a(href="#").nav__item Contacts
+          li.nav__item
+            a(href="#").nav__item.nav__login
+              +svg('nav__login-i', 'login')
+              | Login
+          //- li.nav__item
+          //-   a(href="#") Eng
+          //-   ul
+          //-     li
+          //-       a(href="#") Rus
+          //-     li
+          //-       a(href="#") Eng
     .header__block
       h1.header__title Blockchain revolution
       h2.header__descr for the recruitment industry
-      span.header__video
+      span.header__video.js-video
         +svg('header__i', 'video')
         | Watch the Introduction
-    .header__widjet
+  .widjet
+    -for (var i = 0; i < 5; i++)
+      .widjet__block
+        .widjet__logo
+          img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
+        .widjet__wrap
+          .widjet__name Bittrex
+          .widjet__inner
+            .widjet__sum 0.1223344
+            .widjet__currency USD
+          .widjet__percent.widjet__percent_plus 8.82773%
+      .widjet__block
+        .widjet__logo
+          img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
+        .widjet__wrap
+          .widjet__name Bittrex
+          .widjet__inner
+            .widjet__sum 0.1223344
+            .widjet__currency USD
+          .widjet__percent.widjet__percent_minus 8.82773%

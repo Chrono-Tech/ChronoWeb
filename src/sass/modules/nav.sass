@@ -1,0 +1,95 @@
+.nav
+
+
+  &__block
+    position: fixed
+    width: 100%
+    max-width: 640px
+    right: 0
+    top: 0
+    background: $white
+    z-index: 50
+    padding-top: 50px
+
+    ul,
+    li
+      padding: 0
+      margin: 0
+      list-style: none
+
+  &__item
+    position: relative
+    font-size: 1.8rem
+    line-height: 2.1rem
+    color: #00005F
+    padding: 13px 16px
+    display: block
+
+  &__products
+    border-bottom: 1px solid #E9EFFF
+
+    &-descr
+      display: none
+
+    &-logo
+      display: block
+      position: absolute
+      left: 16px
+      top: 7px
+
+    a
+      display: block
+      padding: 13px 16px 13px 64px
+      color: #00005F
+      position: relative
+
+  &__login
+    background: #F7F9FF
+    color: #6768a2
+    padding-top: 18px
+    padding-bottom: 17px
+    padding-left: 48px
+
+    &-i
+      position: absolute
+      width: 18px
+      height: 18px
+      left: 16px
+      top: 19px
+
+@media ($desktop)
+
+  .nav
+
+    &__i
+      display: none
+
+    &__block
+      background: none
+      position: absolute
+      width: auto
+      max-width: 1000px
+      padding: 0
+      right: 50px
+      top: 47px
+
+    &__products
+      display: none
+
+    &__list
+      display: flex
+      color: $white
+
+    &__item
+      color: $white
+      padding: 0
+      margin: 0 21px
+
+    &__login
+      background: none
+      padding-left: 30px
+      margin-right: 0
+
+      &-i
+        left: 0
+        top: 0
