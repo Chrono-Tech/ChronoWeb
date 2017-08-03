@@ -58,6 +58,7 @@
       box-shadow: 0 8px 16px rgba(0,0,0,.24)
       padding: 10px 0
       display: none
+      border-radius: 2px
 
       a
         display: block
@@ -177,6 +178,27 @@
 
   .nav
 
+    &__item_hover
+      height: 50px
+
+      .nav__item_product
+        transition: all $fast
+
+      .nav__products
+        visibility: hidden
+        opacity: 0
+        transition: opacity $fast, visibility 0s $fast
+
+      &:hover
+
+        .nav__item_product
+          opacity: .6
+
+        .nav__products
+          visibility: visible
+          opacity: 1
+          transition-delay: 0s
+
     &__i,
     &__close,
     &__logo
@@ -195,8 +217,13 @@
           font-size: 1.6rem
           line-height: 2rem
           padding: 6px 16px
+          transition: all $fast
+
+          &:hover
+            font-weight: bold
 
           &.current
+            font-weight: bold
 
             .nav__lang-i
               top: 7px
@@ -222,7 +249,8 @@
       left: 20px
       top: 40px
       padding: 12px 0
-      display: none
+      // display: none
+      border-radius: 2px
 
       a
         display: block

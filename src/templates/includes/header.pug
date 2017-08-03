@@ -5,9 +5,9 @@
     <iframe src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
 header.header.js-first-slide
   .wrap
-    .footer__logo-block
-      .footer__logo #[span.footer__logo-color Chrono]bank.io
-      .footer__beta beta 10.0
+    .header__logo 
+      +svg('header__logo-i', 'logo-chronobank')
+      | #[span.footer__logo-color Chrono]bank.io
     a.header__news(href="#")
       .header__label new
       b Jun 4 
@@ -18,8 +18,8 @@ header.header.js-first-slide
         img(src="../i/logo.png" srcset="../i/@2x/logo.png 2x").nav__logo
         .nav__close.js-close-menu
         ul.nav__list
-          li.nav__item
-            a(href="#").nav__item.nav__item_product.js-nav-sec Products
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__item_product Products
             ul.nav__products
               li
                 a(href="#")
@@ -36,7 +36,7 @@ header.header.js-first-slide
           li.nav__item
             a(href="#").nav__item.js-close-menu FAQ
           li.nav__item
-            a(href="#").nav__item.js-close-menu Blog
+            a(href="https://medium.com/@Chronobank" target="_blank").nav__item.js-close-menu Blog
           li.nav__item
             a(href="#").nav__item.js-close-menu Contacts
           li.nav__item
