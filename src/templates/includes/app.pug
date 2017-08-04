@@ -21,7 +21,8 @@
               +svg('app__i', 'list')
               | This solution is far more sustainable than any of the fiat-pegged or backed coins that currently exist in the crypto market.
         .app__aside
-          img(src="../i/chronomint.jpg").app__pic
+          //- img(src="../i/chronomint.jpg").app__pic
+          img(src="../i/chronomint.png" srcset="../i/@2x/chronomint.png 2x").app__pic
     .app__container.app__container_dark
       .app__wrap
         .app__aside
@@ -56,9 +57,10 @@
         img(src="../i/logo2.png" srcset="../i/@2x/logo2.png").app__logo
         | LaborX
       .app__wrap
-        .app__aside
+        .app__aside.app__aside_revert
           h4.app__aside-title The second stage is to create LaborX, a decentralised marketplace where people in real-world professions will be able to sell labour-hours to anyone.
-          img(src="../i/laborx.jpg").app__pic
+          img(src="../i/laborx.png" srcset="../i/@2x/laborx.png 2x").app__pic
+          //- img(src="../i/laborx.jpg").app__pic
         .app__content
           h3.app__title-sec LaborX Decentralised Marketplace
           .app__info

@@ -41,6 +41,7 @@
     "jquery": "^3.2.1",
     "jquery-validation": "^1.16.0",
     "normalize.css": "^7.0.0",
-    "swiper": "^3.4.2"
+    "swiper": "^3.4.2",
+    "webticker": "^3.0.0"
   }
 }

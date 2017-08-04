@@ -1,6 +1,13 @@
 .news
   padding-top: 24px
 
+  &__preloader
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    height: 100px
+    width: 100%
+
   &__container
     padding: 82px 0 0
     position: relative
@@ -13,7 +20,11 @@
 
   &__pic
     display: block
+    background-repeat: no-repeat
+    background-position: 50% 50%
     width: 100%
+    padding-top: 83.4%
+    background-size: cover
     margin-bottom: 16px
 
   &__title
@@ -31,7 +42,7 @@
   .news
     display: flex
     flex-wrap: wrap
-    align-items: flex-start
+    align-items: stretch
 
     &__block
       width: 50%

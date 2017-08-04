@@ -10,6 +10,7 @@ require("../../node_modules/jquery-validation/dist/jquery.validate.js");
 
 
 
+
 // Closest Polyfill for IE
 (function(ELEMENT) {
     ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
@@ -46,6 +47,35 @@ function animateScroll(el, e) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+
+  $.ajax({
+    url: 'https://medium.com/feed/@Chronobank',
+  })
+  .done(function(response) {
+    var html = '';
+    console.log(response);
+    $(response).find('item').each(function(i) {
+      if (i < 4) {
+        var self = $(this);
+        var title, url, descr, pic;
+
+        title = self.find('title').text();
+        url = self.find('guid').text();
+        descr = self.find('content')['prevObject'].text();
+        descr = self[0].getElementsByTagName("encoded")[0].childNodes[0].nodeValue;
+        pic = descr.match(/src="http([^">]+)/g);
+        pic = pic[0].match(/http([^">]+)/g);
+        descr = descr.replace(/<\/?[^>]+(>|$)/g, "");
+        descr = descr.replace(/  /g, "");
+        descr = descr.substring(0,110);
+
+        console.log(title, url, pic, descr);
+
+        html = html + '<a class="news__block" target="_blank" href="' + url + '"><div class="news__pic" style="background-image: url(' + pic + ')"></div><h4 class="news__title">' + title + '</h4><p class="news__descr">' + descr + '...</p></a>'
+      }
+      $('.news').html(html);
+    })
+  });
 
 
   // Nav
@@ -87,6 +117,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // initFonts();
   //
   document.addEventListener('click', toggle, false);
+
 
   // Slider
   var swiperPartners = new Swiper ('.js-swiper', {

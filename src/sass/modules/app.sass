@@ -68,6 +68,9 @@
 
   &__pic
     width: 100%
+    display: block
+    box-shadow: 0 16px 24px rgba(0,0,0,.24)
+    margin-bottom: 50px
 
   &__phone
     margin: 0 auto
@@ -87,6 +90,8 @@
     margin: 0 12px 32px
     text-align: center
     font-weight: 300
+    position: relative
+    z-index: 5
 
   &__links
     margin-bottom: -24px
@@ -181,6 +186,22 @@
 @media ($desktop)
 
   .app
+
+    &__aside
+      transform-origin: left
+      transform-style: preserve-3d
+      perspective: 500px
+
+      &_revert
+        transform-origin: right
+
+        .app__pic
+          transform: rotate3d(0, 1, 0, 10deg) translate(15px, 40px)
+
+    &__pic
+      box-shadow: 0 16px 24px rgba(0,0,0,.24)
+      transform: rotate3d(0, 1, 0, -10deg) translate(-15px, 30px)
+      transition: all $fast
 
     &__info
 
