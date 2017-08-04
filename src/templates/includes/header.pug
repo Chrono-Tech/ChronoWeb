@@ -75,27 +75,28 @@ header.header.js-first-slide
       span.header__video.js-video
         +svg('header__i', 'video')
         | Watch the Introduction
-  ul.widjet
-    -for (var i = 0; i < 5; i++)
-      li.widjet__block
-        .widjet__logo
-          img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
-        .widjet__wrap
-          .widjet__name Bittrex
-          .widjet__inner
-            .widjet__sum 0.1223344
-            .widjet__currency USD
-          .widjet__percent.widjet__percent_plus
-            | 8.82773%
-            +svg('widjet__i', 'plus')
-      li.widjet__block
-        .widjet__logo
-          img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
-        .widjet__wrap
-          .widjet__name Bittrex
-          .widjet__inner
-            .widjet__sum 0.1223344
-            .widjet__currency USD
-          .widjet__percent.widjet__percent_minus
-            | 8.82773%
-            +svg('widjet__i', 'minus')
+  .widjet
+    .widjet__inner
+      -for (var i = 0; i < 5; i++)
+        .widjet__block
+          .widjet__logo
+            img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
+          .widjet__wrap
+            .widjet__name Bittrex
+            .widjet__inner
+              .widjet__sum 0.1223344
+              .widjet__currency USD
+            .widjet__percent.widjet__percent_plus
+              | 8.82773%
+              +svg('widjet__i', 'plus')
+        .widjet__block
+          .widjet__logo
+            img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
+          .widjet__wrap
+            .widjet__name Bittrex
+            .widjet__inner
+              .widjet__sum 0.1223344
+              .widjet__currency USD
+            .widjet__percent.widjet__percent_minus
+              | 8.82773%
+              +svg('widjet__i', 'minus')
