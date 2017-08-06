@@ -81,22 +81,23 @@ header.header.js-first-slide
         .widjet__block
           .widjet__logo
             img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
-          .widjet__wrap
-            .widjet__name Bittrex
-            .widjet__inner
-              .widjet__sum 0.1223344
-              .widjet__currency USD
-            .widjet__percent.widjet__percent_plus
-              | 8.82773%
-              +svg('widjet__i', 'plus')
-        .widjet__block
-          .widjet__logo
-            img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
-          .widjet__wrap
-            .widjet__name Bittrex
-            .widjet__inner
-              .widjet__sum 0.1223344
-              .widjet__currency USD
-            .widjet__percent.widjet__percent_minus
-              | 8.82773%
-              +svg('widjet__i', 'minus')
+          .widjet__wrap.js-widjet(data-url="../data/test.json")
+            //- .widjet__name Bittrex
+            //- .widjet__inner
+            //-   .widjet__sum 0.1223344
+            //-   .widjet__currency USD
+            //- .widjet__percent.widjet__percent_plus
+            //-   | 8.82773%
+            //-   +svg('widjet__i', 'plus')
+        //- .widjet__block
+        //-   .widjet__logo
+        //-     img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
+        //-   .widjet__wrap
+        //-     .widjet__name Bittrex
+        //-     .js-widjet
+        //-       .widjet__inner
+        //-         .widjet__sum 0.1223344
+        //-         .widjet__currency USD
+        //-       .widjet__percent.widjet__percent_minus
+        //-         | 8.82773%
+        //-         +svg('widjet__i', 'minus')

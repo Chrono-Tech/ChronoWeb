@@ -246,6 +246,25 @@ document.addEventListener('DOMContentLoaded', function() {
       // duplicated: true
   });
 
+  $('.js-widjet').each(function() {
+    var self = $(this);
+    var url = self.data('url');
+    $.ajax({
+      url: url,
+    }).done(function(response) {
+      var title = response.result[0].MarketName;
+      var price = response.result[0].Last;
+      var changes = price * 100 / response.result[0].PrevDay - 100;
+      var increase = (changes > 0 ? true : false);
+      var increaseClass = increase ? 'widjet__percent_plus' : 'widjet__percent_minus';
+      var increaseSvg = increase ? '<svg class="widjet__i"><use xlink:href="#plus"></use></svg>' : '<svg class="widjet__i"><use xlink:href="#minus"></use></svg>';
+      changes = changes.toFixed(5);
+      changes = Math.abs(changes);
+      price = price.toFixed(7);
+      var template = '<div class="widjet__name">' + title + '</div><div class="widjet__inner"><div class="widjet__sum">' + price + '</div><div class="widjet__currency">USD</div></div><div class="widjet__percent ' + increaseClass + '">' + changes + '% ' + increaseSvg + '</div>';
+      self.html(template)
+    })
+  })
 
 
 
