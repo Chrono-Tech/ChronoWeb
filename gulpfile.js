@@ -111,7 +111,8 @@ gulp.task('scripts-nowatch', function() {
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
-      baseDir: "./dist/"
+      baseDir: "./dist/",
+        index: "html/index.html"
     },
     open: false // Do not open server in browser
   });

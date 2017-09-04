@@ -129,7 +129,7 @@
     padding: 13px 16px
     display: block
 
-    &_product
+    &_label
       text-transform: uppercase
       opacity: .6
 
@@ -178,11 +178,8 @@
 
   .nav
 
-    &__item_hover
+    &__item_expand
       height: 50px
-
-      .nav__item_product
-        transition: all $fast
 
       .nav__products
         visibility: hidden
@@ -190,14 +187,22 @@
         transition: opacity $fast, visibility 0s $fast
 
       &:hover
-
-        .nav__item_product
-          opacity: .6
-
         .nav__products
           visibility: visible
           opacity: 1
           transition-delay: 0s
+
+    &__item_hover
+
+      .nav__item_label
+        transition: all $fast
+
+      &:hover
+
+        .nav__item_label
+          opacity: .6
+
+
 
     &__i,
     &__close,
@@ -284,7 +289,7 @@
       padding: 0
       margin: 0 21px
 
-      &_product
+      &_label
         text-transform: none
         opacity: 1
 

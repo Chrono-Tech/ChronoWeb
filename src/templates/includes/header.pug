@@ -18,8 +18,8 @@ header.header.js-first-slide
         img(src="../i/logo.png" srcset="../i/@2x/logo.png 2x").nav__logo
         .nav__close.js-close-menu
         ul.nav__list
-          li.nav__item.nav__item_hover
-            a(href="#").nav__item.nav__item_product Products
+          li.nav__item.nav__item_hover.nav__item_expand
+            a(href="#").nav__item.nav__item_label Products
             ul.nav__products
               li
                 a(href="#")
@@ -31,14 +31,14 @@ header.header.js-first-slide
                   img(src="../i/nav_logo2.png" srcset="../i/@2x/nav_logo2.png 2x").nav__products-logo
                   .nav__products-name LaborX
                   .nav__products-descr Our product helps people lorem ipsum subtitle
-          li.nav__item
-            a(href="#").nav__item.js-close-menu Team
-          li.nav__item
-            a(href="#").nav__item.js-close-menu FAQ
-          li.nav__item
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__item_label.js-close-menu Team
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__item_label.js-close-menu FAQ
+          li.nav__item.nav__item_hover
             a(href="https://medium.com/@Chronobank" target="_blank").nav__item.js-close-menu Blog
-          li.nav__item
-            a(href="#").nav__item.js-close-menu Contacts
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__item_label.js-close-menu Contacts
           li.nav__item
             a(href="#").nav__item.nav__login.js-close-menu
               +svg('nav__login-i', 'login')
@@ -74,7 +74,8 @@ header.header.js-first-slide
       h2.header__descr for the recruitment industry
       span.header__video.js-video
         +svg('header__i', 'video')
-        | Watch the Introduction
+        span.header__video_label
+          | Watch the Introduction
   .widjet
     .widjet__inner
       -for (var i = 0; i < 5; i++)

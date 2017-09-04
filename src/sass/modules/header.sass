@@ -13,7 +13,7 @@
     position: relative
     display: block
     position: absolute
-    left: 16px
+    left: 0
     top: 0
     font-size: 2.3rem
     line-height: 1
@@ -88,6 +88,12 @@
 
   .wrap
     position: relative
+    z-index: 0
+
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
 
   &__block
     padding-top: 35px
@@ -136,19 +142,16 @@
   right: 0
   top: 0
 
-
-
 @media ($tablet)
 
   .header
-    background: url(../i/header_big.jpg) no-repeat center center #5d49b2
-    background-size: cover
+    min-height: 700px
+    background: linear-gradient(224deg, #644ebf, #262448) no-repeat
     padding-top: 0
     padding-bottom: 0
 
     &__logo
       padding-left: 58px
-      left: 30px
       top: 37px
       font-size: 3.6rem
       letter-spacing: -1.2px
@@ -211,14 +214,18 @@
       right: -68px
 
     .wrap
-      min-height: 100vh
+      //min-height: 100vh
+      padding-top: 30px
       box-sizing: border-box
-      display: flex
-      flex-direction: column
-      justify-content: center
+
+      &:after
+        width: 850px
+        height: 425px
+        background: url(../i/header_big.png) no-repeat center
 
     &__block
       padding-top: 0
+      margin-top: 200px
 
     &__title
       font-size: 5.3rem
@@ -238,10 +245,22 @@
 
   .header
 
-    &__logo
-      left: 50px
+    .wrap
+
+      &:after
+        width: 850px
+        height: 425px
+        background: url(../i/header_big.png) no-repeat center
+        top: 140px
+        right: -60px
 
     &__video
+
+      &_label
+        transition: all $fast
+
+        &:hover
+          opacity: .6
 
       &-block
 
