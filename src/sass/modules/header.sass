@@ -99,18 +99,15 @@
     padding-top: 35px
 
   &__title
-    font-size: 2.8rem
-    line-height: 3.4rem
-    font-weight: 300
-    color: $white
-
-  &__descr
     font-size: 1.8rem
-    line-height: 2.2rem
-    opacity: .6
+    line-height: normal
     font-weight: 300
     color: $white
     margin-bottom: 35px
+
+    &_main
+      font-size: 2.8rem
+      line-height: normal
 
   &__widjet
     position: absolute
@@ -225,16 +222,13 @@
 
     &__block
       padding-top: 0
-      margin-top: 200px
 
     &__title
-      font-size: 5.3rem
-      line-height: 6.8rem
-
-    &__descr
+      margin-bottom: 42px
       font-size: 3.6rem
-      line-height: 4.4rem
-      margin-bottom: 35px
+
+      &_main
+        font-size: 5.3rem
 
     &__video
       font-size: 1.6rem
@@ -272,5 +266,11 @@
       display: flex
 
     &__title
-      font-size: 6.3rem
-      line-height: 7.8rem
+
+      &_main
+        display: block
+        font-size: 6.3rem
+        margin-bottom: 13px
+
+    &__block
+      margin-top: 210px
