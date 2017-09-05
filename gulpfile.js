@@ -114,7 +114,8 @@ gulp.task('browser-sync', function() {
       baseDir: "./dist/",
         index: "html/index.html"
     },
-    open: false // Do not open server in browser
+    open: false,
+    codeSync: false
   });
 });
 
