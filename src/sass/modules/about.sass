@@ -95,7 +95,7 @@
   .about
 
     &__list
-      padding: 40px 37px 0
+      padding: 40px 36px 0
       position: relative
       z-index: 20
 
@@ -138,7 +138,7 @@
       font-weight: 500
       text-align: left
       display: inline-block
-      margin: 0 0 37px
+      margin: 0
       color: #0039cb
 
     &__img
@@ -149,6 +149,9 @@
 
       &.professions
         padding-bottom: 81px
+
+        .about__legend
+          margin-bottom: 37px
 
         .about__pic
           width: 59%
@@ -168,8 +171,8 @@
         .about__legend
           width: 530px
           box-sizing: border-box
-          padding: 15px 24px 19px
-          line-height: 2.6rem
+          padding: 14px 24px 19px
+          line-height: 2.7rem
           background-color: white
 
         .about__text
@@ -179,10 +182,90 @@
 
         .about__content
           padding-top: 65px
+          padding-bottom: 63px
 
         .about__img
           margin-top: -108px
           margin-left: -13px
+
+      &.list
+        padding-top: 65px
+        padding-bottom: 63px
+
+        .about__text_title
+          text-align: center
+          margin-bottom: 40px
+
+        .about__list
+          background-color: #f7f9ff
+          box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+          margin: 0 -33px
+          padding-top: 65px
+          padding-bottom: 38px
+
+          &-container
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+
+          &-block
+            width: 250px
+            padding: 87px 0 32px
+
+            &:nth-of-type(1)
+              svg
+                top: 4px
+                left: 0
+                width: 56px
+                height: 56px
+
+            &:nth-of-type(2)
+              svg
+                top: 0
+                left: 0
+                width: 63px
+                height: 63px
+
+            &:nth-of-type(3)
+              svg
+                top: 4px
+                left: 0
+
+            &:nth-of-type(4)
+              svg
+                top: 4px
+                left: 0
+
+            &:nth-of-type(5)
+              svg
+                top: 9px
+                left: 0
+
+            &:nth-of-type(6)
+              svg
+                top: 9px
+                left: 0
+
+            &:nth-of-type(7)
+              svg
+                top: 9px
+                left: 0
+
+            &:nth-of-type(8)
+              svg
+                top: 9px
+                left: 0
+
+          &-name
+            font-size: 1.8rem
+            line-height: 2.4rem
+            font-weight: bold
+            margin-bottom: 16px
+
+          &-descr
+            font-size: 1.6rem
+            line-height: 2.4rem
+            margin-right: -3px
 
     &__text
       font-size: 1.6rem
@@ -209,24 +292,3 @@
       flex-direction: row
       justify-content: space-between
       align-items: flex-start
-
-    &__list
-      padding-bottom: 0
-
-      &-container
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-
-      &-block
-        width: 23%
-        padding: 80px 0 42px
-
-      &-name
-        font-size: 1.8rem
-        line-height: 2.1rem
-        margin-bottom: 11px
-
-      &-descr
-        font-size: 1.6rem
-        line-height: 2.4rem

@@ -1,11 +1,54 @@
 .app
-  .wrap
-    .app__container
+  .app__container.desktop
+    .wrap
       h2.app__title
         img(src="../i/logo1.png" srcset="../i/@2x/logo1.png").app__logo
         | ChronoMint
-      .app__wrap.app__wrap_reverse
-        .app__content
+      .app__content
+        .app__text
+          h3.app__title-sec ChronoMint — the interface for ChronoBank
+          p.app__descr ChronoMint is the interface for ChronoBank’s smart contract management system. It can be used for the following operations and functions:
+          ul.app__list
+            li
+              +svg('app__i', 'list')
+              span Manage ETH and any ERC20 tokens (not just TIME and LH), including secure multi-signature support when using hardware key storage.
+            li
+              +svg('app__i', 'list')
+              span Manage BTC, LTC and a number of other popular cryptocurrencies (coming soon).
+            li
+              +svg('app__i', 'list')
+              span Create your own ERC20 token, with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
+            li
+              +svg('app__i', 'list')
+              span Distributed cryptocurrency market on top of 0x protocol (coming soon).
+            li
+              +svg('app__i', 'list')
+              span Voting function: TIME token holders will be able to vote on important company decisions.
+            li
+              +svg('app__i', 'list')
+              span Collection of rewards (long-term holders can place their TIME tokens on a deposit contract balance and receive fees from LH and LaborX operations).
+            li
+              +svg('app__i', 'list')
+              span LOC Management (Chronobank Manager Only).
+            li
+              +svg('app__i', 'list')
+              span LH token issuance (Chronobank Manager Only).
+        .app__aside
+          //- img(src="../i/chronomint.jpg").app__pic
+          img(src="../i/chronomint.png" srcset="../i/@2x/chronomint.png 2x").app__pic
+        nav.app__links
+          h4.app__links_title Downloads
+          a(href="#").app__link
+            img(src="../i/appstore.png" srcset="../i/@2x/appstore.png")
+          a(href="#").app__link
+            img(src="../i/playstore.png" srcset="../i/@2x/playstore.png")
+  .app__container.mobile
+    .wrap
+      .app__content
+        .app__aside
+          h4.app__aside-title We have the best user interface design in blockchain
+          img(src="../i/phone.jpg" srcset="../i/@2x/phone.jpg").app__phone
+        .app__text
           h3.app__title-sec ChronoMint — the blockchain Dapp Title
           ul.app__list
             li
@@ -20,39 +63,18 @@
             li
               +svg('app__i', 'list')
               | This solution is far more sustainable than any of the fiat-pegged or backed coins that currently exist in the crypto market.
-        .app__aside
-          //- img(src="../i/chronomint.jpg").app__pic
-          img(src="../i/chronomint.png" srcset="../i/@2x/chronomint.png 2x").app__pic
-    .app__container.app__container_dark
-      .app__wrap
-        .app__aside
-          h4.app__aside-title We have the best user interface design in blockchain  
-          img(src="../i/phone.jpg" srcset="../i/@2x/phone.jpg").app__phone
-        .app__content.app__content_padding
-          .app__hidden
-            h3.app__title-sec ChronoMint — the blockchain Dapp Title
-            ul.app__list
-              li
-                +svg('app__i', 'list')
-                | Labour-Hour tokens are linked to average hourly wages in the host country and are backed by a real labour force from big recruitment and labour-hire companies.
-              li
-                +svg('app__i', 'list')
-                | Labour is abundant enough for everyone to have access to it, yet scarce enough to be valuable. It is the most tradeable resource in the real economy.
-              li
-                +svg('app__i', 'list')
-                | LH tokens will tokenise this resource. Because they are backed by real labour, they are absolutely inflation-proof and have next to zero volatility — in comparison to bitcoin and other cryptocurrencies.
-              li
-                +svg('app__i', 'list')
-                | This solution is far more sustainable than any of the fiat-pegged or backed coins that currently exist in the crypto market.
-          nav.app__links
-            a(href="#").app__link
-              img(src="../i/appstore.png" srcset="../i/@2x/appstore.png")
-            a(href="#").app__link
-              img(src="../i/playstore.png" srcset="../i/@2x/playstore.png")
-    .app__join
+        nav.app__links
+          h4.app__links_title Downloads
+          a(href="#").app__link
+            img(src="../i/appstore.png" srcset="../i/@2x/appstore.png")
+          a(href="#").app__link
+            img(src="../i/playstore.png" srcset="../i/@2x/playstore.png")
+  .app__join
+    .wrap
       p #[b Join our Slack] #[br] to communicate with our team!
       a(href="#").button_sec Join our Slack
-    .app__container.app__container_laborx
+  .app__container.app__container_laborx
+    .wrap
       h2.app__title
         img(src="../i/logo2.png" srcset="../i/@2x/logo2.png").app__logo
         | LaborX
@@ -68,4 +90,4 @@
             p.app__hidden We have taken great care to design the system for ease of use, to make sure that actual labour time and the LH token can be exchanged efficiently for each other. While timebanking in its simplest form uses a standard exchange rate for time, each ChronoBank.io participant will have reputation assigned to them, to enable them to access remuneration appropriate to their skill level.
             p The better the individual’s reputation based on previous work, the higher the price they will be able to command for an hour’s work. #[b Initial reputation will be set based on the individual’s experience within the partner company from stage one of the project.]
             p.app__hidden For those who have not participated in the system in any previous capacity, a nominal average reputation will be assigned. #[br] Every care is taken to incentivise the user to increase their reputation and maintain it at the highest level.
-        
+

@@ -3,18 +3,25 @@
   &__i
     position: absolute
     left: 0
-    top: 5px
+    top: 6px
     width: 24px
     height: 24px
 
   &__container
-    padding-top: 32px
+    padding-top: 33px
 
-    &_dark
-      background: #F7F9FF
+    &.mobile
+      background-color: #f7f9ff
       margin: 0 -16px 86px
       padding-left: 16px
       padding-right: 16px
+
+    .app__content
+      display: flex
+      flex-direction: column
+
+      &.reverse
+        flex-direction: column-reverse
 
     &_laborx
       margin-bottom: 40px
@@ -47,7 +54,6 @@
   &__logo
     width: 64px
     height: 64px
-    box-shadow: 0 8px 16px rgba(0,0,0,.24)
     border-radius: 15px
     display: block
     position: absolute
@@ -55,19 +61,11 @@
     top: 0
     transform: translate(-50%, 0)
 
-  &__wrap
-    display: flex
-    flex-direction: column
-
-    &_reverse
-      flex-direction: column-reverse
-
   &__aside
     margin: 0 -16px
     padding-bottom: 8px
 
   &__pic
-    width: 100%
     display: block
     box-shadow: 0 16px 24px rgba(0,0,0,.24)
     margin-bottom: 50px
@@ -187,16 +185,32 @@
 
   .app
 
-    &__aside
-      transform-origin: left
-      transform-style: preserve-3d
-      perspective: 500px
+    &__title
+      font-size: 48px
+      font-weight: 500
+      padding-top: 76px
+      left: 7px
 
-      &_revert
-        transform-origin: right
+      &-sec
+        font-weight: bold
+        line-height: 3.4rem
+        margin-bottom: 23px
 
-        .app__pic
-          transform: rotate3d(0, 1, 0, 10deg) translate(15px, 40px)
+    &__logo
+      margin-left: -7px
+
+    &__descr
+      font-size: 1.6rem
+      line-height: 2.4rem
+      text-align: left
+      color: #66669f
+      margin-bottom: 11px
+
+    &__text
+      width: 30%
+      box-sizing: border-box
+      flex: 1 0 auto
+      padding-top: 56px
 
     &__pic
       box-shadow: 0 16px 24px rgba(0,0,0,.24)
@@ -209,14 +223,21 @@
         margin-bottom: 18px
 
     &__container
-      padding-top: 47px
 
-      &_dark
-        margin-left: -50px
-        margin-right: -50px
-        padding-left: 50px
-        padding-right: 50px
-        padding-bottom: 40px
+      &.desktop
+
+        .wrap
+          position: relative
+
+        .app__links
+          position: absolute
+          bottom: 0
+          left: 50%
+
+        .app__content
+          flex-direction: row
+          position: relative
+          padding-bottom: 53px
 
       &_laborx
         padding-bottom: 20px
@@ -230,23 +251,15 @@
         .app__pic
           top: -75px
 
-    &__wrap
-      flex-direction: row
-
-    &__content
-      width: 50%
-      box-sizing: border-box
-      flex: 1 0 auto
-      padding-top: 55px
-
-      &_padding
-        padding-top: 5px
-
     &__aside
       width: 50%
       box-sizing: border-box
       flex: 1 0 auto
       margin: 0
+      transform-origin: left
+      transform-style: preserve-3d
+      perspective: 370px
+      padding-top: 68px
 
       &-title
         position: relative
@@ -256,27 +269,45 @@
         margin-left: auto
         margin-right: auto
 
+      &_revert
+        transform-origin: right
+
+        .app__pic
+          transform: rotate3d(0, 1, 0, 10deg) translate(15px, 40px)
+
     &__pic
       right: -50px
       top: -40px
       position: relative
-
-    &__hidden
-      display: block
+      height: 658px
 
     &__list
-      width: 90%
 
       li
-        padding-left: 50px
+        padding-left: 40px
+        padding-bottom: 11px
+
+        span
+          display: inline-block
+          padding-top: 5px
 
     &__links
-      display: flex
-      margin-bottom: 0
-      padding-top: 72px
+      background-color: #f7f9ff
+      box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+      border-radius: 2px
+      padding: 19px 24px
+      text-align: left
+      margin: 0
+
+      &_title
+        font-size: 1.8rem
+        line-height: 2.4rem
+        color: #00005f
+        font-weight: bold
 
     &__link
-      margin: 0 20px 0 0
+      display: inline-block
+      vertical-align: middle
 
     &__container_laborx
       margin-bottom: 0
