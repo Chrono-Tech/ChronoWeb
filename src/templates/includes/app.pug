@@ -34,7 +34,6 @@
               +svg('app__i', 'list')
               span LH token issuance (Chronobank Manager Only).
         .app__aside
-          //- img(src="../i/chronomint.jpg").app__pic
           img(src="../i/chronomint.png" srcset="../i/@2x/chronomint.png 2x").app__pic
         nav.app__links
           h4.app__links_title Downloads
@@ -46,23 +45,23 @@
     .wrap
       .app__content
         .app__aside
-          h4.app__aside-title We have the best user interface design in blockchain
           img(src="../i/phone.jpg" srcset="../i/@2x/phone.jpg").app__phone
         .app__text
-          h3.app__title-sec ChronoMint — the blockchain Dapp Title
+          h3.app__title-sec ChronoMint — the interface for ChronoBank
+          p.app__descr ChronoMint is the interface for ChronoBank’s smart contract management system. It can be used for the following operations and functions:
           ul.app__list
             li
               +svg('app__i', 'list')
-              | Labour-Hour tokens are linked to average hourly wages in the host country and are backed by a real labour force from big recruitment and labour-hire companies.
+              span Manage ETH and any ERC20 tokens (not just TIME and LH), including secure multi-signature support when using hardware key storage.
             li
               +svg('app__i', 'list')
-              | Labour is abundant enough for everyone to have access to it, yet scarce enough to be valuable. It is the most tradeable resource in the real economy.
+              span Manage BTC, LTC and a number of other popular cryptocurrencies (coming soon).
             li
               +svg('app__i', 'list')
-              | LH tokens will tokenise this resource. Because they are backed by real labour, they are absolutely inflation-proof and have next to zero volatility — in comparison to bitcoin and other cryptocurrencies.
+              span Create  your own ERC20 token, with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
             li
               +svg('app__i', 'list')
-              | This solution is far more sustainable than any of the fiat-pegged or backed coins that currently exist in the crypto market.
+              span Distributed cryptocurrency market on top of 0x protocol (coming soon).
         nav.app__links
           h4.app__links_title Downloads
           a(href="#").app__link
@@ -71,23 +70,22 @@
             img(src="../i/playstore.png" srcset="../i/@2x/playstore.png")
   .app__join
     .wrap
-      p #[b Join our Slack] #[br] to communicate with our team!
-      a(href="#").button_sec Join our Slack
-  .app__container.app__container_laborx
+      .app__join_content
+        a(href="#").button_sec Join our Slack
+        p Get in touch with our team!
+        a(href="#").button_sec Join our Slack
+  .app__container.laborx
     .wrap
       h2.app__title
         img(src="../i/logo2.png" srcset="../i/@2x/logo2.png").app__logo
         | LaborX
-      .app__wrap
+      .app__content
         .app__aside.app__aside_revert
-          h4.app__aside-title The second stage is to create LaborX, a decentralised marketplace where people in real-world professions will be able to sell labour-hours to anyone.
           img(src="../i/laborx.png" srcset="../i/@2x/laborx.png 2x").app__pic
-          //- img(src="../i/laborx.jpg").app__pic
-        .app__content
-          h3.app__title-sec LaborX Decentralised Marketplace
+        .app__text
+          h3.app__title-sec LaborX — decentralised marketplace
           .app__info
-            p #[b LH tokens will act as a substitute for payments in fiat currencies] and will enable people to be rewarded for their work – without cryptocurrency’s signature volatility risk.
-            p.app__hidden We have taken great care to design the system for ease of use, to make sure that actual labour time and the LH token can be exchanged efficiently for each other. While timebanking in its simplest form uses a standard exchange rate for time, each ChronoBank.io participant will have reputation assigned to them, to enable them to access remuneration appropriate to their skill level.
-            p The better the individual’s reputation based on previous work, the higher the price they will be able to command for an hour’s work. #[b Initial reputation will be set based on the individual’s experience within the partner company from stage one of the project.]
-            p.app__hidden For those who have not participated in the system in any previous capacity, a nominal average reputation will be assigned. #[br] Every care is taken to incentivise the user to increase their reputation and maintain it at the highest level.
-
+            p LaborX is ChronoBank’s flagship platform for workers and clients: a place where employers can list jobs and freelancers can find employment from anywhere in the world, 24/7.
+            p It functions without any closures or outages, meaning work can be secured even at nights or on the weekends. LaborX’s reputation system will make the hiring process for every job fair. Every newcomer receives a neutral rating, which will change subject to feedback from the hiring counterparty. A net positive rating will enable workers to access better-paid jobs, whilst a negative rating will cause workers to drop down the ranks, and receive only offers for lower-paid work.
+            p For workers, delayed payment for a completed job becomes a thing of the past, because payment terms are registered in a smart contract from the outset. They can even be processed on a per-second basis.
+            p Another great feature for employers is the low commission fees - just 1% of a job’s overall pay. The difference between traditional hiring costs and LaborX’s hiring cost can be spent on improving working conditions or on pay bonuses.

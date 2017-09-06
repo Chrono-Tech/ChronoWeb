@@ -1,9 +1,5 @@
 .partners
-  width: calc(100% + 32px)
-  margin: 0 -16px
-  overflow: hidden
-  padding: 36px 0 70px
-  position: relative
+  padding-top: 64px
 
   .swiper-pagination
     bottom: 24px
@@ -22,7 +18,11 @@
     background-color: $blue
 
   &__container
-    padding: 64px 0 0
+    width: calc(100% + 32px)
+    margin: 0 -16px
+    overflow: hidden
+    padding: 36px 0 70px
+    position: relative
 
   &__descr
     font-size: 1.6rem
@@ -75,13 +75,24 @@
     display: none
 
   .partners
-    padding-top: 13px
-    padding-bottom: 0
-    overflow: visible
+    padding-top: 91px
+
+    &__title
+      text-align: center
+      font-size: 4.8rem
+      font-weight: 500
 
     &__descr
+      padding: 3px
       font-size: 2.4rem
       line-height: 3.4rem
+      font-weight: 300
+      text-align: center
+
+    &__container
+      padding-top: 13px
+      padding-bottom: 0
+      overflow: visible
 
     &__wrap
       transform: translate(0, 0) !important

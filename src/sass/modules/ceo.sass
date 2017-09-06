@@ -1,16 +1,14 @@
 .ceo
-  background: $white
-  box-shadow: 0 8px 16px rgba(0, 0, 0, .24)
-  position: relative
-  border-radius: 2px
-  overflow: hidden
 
   a:hover
     text-decoration: underline
 
   &__container
+    background: $white
+    box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2);
     position: relative
-    z-index: 10
+    border-radius: 2px
+    overflow: hidden
 
     .wrap
 
@@ -52,6 +50,7 @@
     font-size: 1.6rem
     line-height: 2rem
     font-style: italic
+    font-weight: normal
 
     &::before
       content: '“'
@@ -74,12 +73,12 @@
 @media ($tablet)
 
   .ceo
-    max-width: 930px
-    margin: 0 auto
-    display: flex
-    align-items: flex-start
 
     &__container
+      max-width: 930px
+      margin: 0 auto
+      display: flex
+      align-items: flex-start
 
       &::before
         height: 90%
@@ -119,6 +118,23 @@
       &_big
         width: auto
 
+    &__inner
+      text-align: left
+      padding-top: 41px
+      padding-left: 47px
+      padding-bottom: 20px
+
+    &__name
+      font-size: 24px
+      font-weight: 300
+      color: #00005f
+      margin-bottom: 4px
+
+    &__position
+      font-size: 14px
+      color: #0039cb
+      text-transform: uppercase
+
     &__message
       padding-left: 60px
       font-size: 1.8rem
@@ -126,4 +142,5 @@
 
       &::before
         font-size: 14.4rem
-        top: 0
+        top: -17px
+        left: -20px
