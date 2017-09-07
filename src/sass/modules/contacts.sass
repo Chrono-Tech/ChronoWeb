@@ -1,10 +1,15 @@
 .contacts
-  padding: 64px 16px 32px
-  margin: 0 -16px
-  background-color: #F7F9FF
 
   &__container
-    display: block
+    padding: 64px 16px 32px
+    margin: 0 -16px
+
+  &__inner
+    &_title
+      font-size: 1.6rem
+      line-height: 1.8rem
+      margin-bottom: 26px
+      font-weight: normal
 
   &__list
     padding-top: 32px
@@ -41,25 +46,19 @@
     .button__container
       padding-top: 9px
 
-  &__title
-    font-size: 1.6rem
-    line-height: 1.8rem
-    margin-bottom: 26px
-    font-weight: normal
-
 @media ($tablet)
 
   .contacts
-    margin: 0
-    margin-left: -30px
-    width: calc(50% + 30px)
-    padding-left: 30px
-    box-sizing: border-box
+
+    .wrap
+      display: flex
 
     &__container
-
-      .wrap
-        display: flex
+      margin: 0
+      margin-left: -30px
+      width: calc(50% + 30px)
+      padding-left: 30px
+      box-sizing: border-box
 
     &__form
       width: 50%
@@ -71,22 +70,53 @@
 @media ($desktop)
 
   .contacts
-    margin-left: -50px
-    width: calc(50% + 50px)
-    padding-left: 50px
+
+    &__title
+      font-size: 4.8rem
+      line-height: normal
+      font-weight: 500
+
+    &__container
+      display: flex
+      justify-content: space-between
+      padding: 96px 0
+      margin: 0
+      width: 100%
+
+    &__content
+      width: 50%
+      box-sizing: border-box
+      flex: 1 0 0
 
     &__list
       font-size: 1.8rem
       line-height: 2.2rem
-      padding-top: 38px
-      padding-bottom: 136px
+      padding-top: 37px
+
+      dt
+        font-size: 1.8rem
+        font-weight: 500
 
       dd
-        margin-bottom: 27px
+        margin-bottom: 28px
 
-    &__title
-      font-size: 2.4rem
-      line-height: 3.4rem
+    &__i
+      top: 7px
+
+    &__inner
+      padding-right: 96px
+      padding-left: 112px
+      box-sizing: border-box
+      width: auto
+
+      &_title
+        font-size: 2.4rem
+        line-height: 3.4rem
+        font-weight: 300
+        margin-bottom: 30px
 
     &__form
-      padding: 104px 0 64px
+      width: 50%
+      flex: 1 0 0
+      padding: 44px 0 0
+

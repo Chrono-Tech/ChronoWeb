@@ -29,7 +29,7 @@
     line-height: 1.8rem
     padding: 24px 0 0
 
-  &__wrap
+  &__content
     display: flex
     align-items: stretch
 
@@ -93,24 +93,35 @@
       padding-top: 13px
       padding-bottom: 0
       overflow: visible
+      width: auto
+      margin: 0
 
-    &__wrap
+    &__content
       transform: translate(0, 0) !important
       flex-wrap: wrap
       justify-content: space-between
 
     &__block
-      width: calc(33.3% - 27px)
+      width: 32%
       box-sizing: border-box
       margin-top: 33px
       flex: auto 0 0
 
+      &:hover
+        box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+
     &__name
       font-size: 1.8rem
       line-height: 2.1rem
-      font-weight: normal
+      font-weight: bold
       margin-bottom: 10px
 
     &__descr
       font-size: 2.4rem
       line-height: 3.4rem
+
+    &__info
+      font-size: 1.6rem
+      line-height: 2.4rem
+      text-align: left
+      color: #66669f

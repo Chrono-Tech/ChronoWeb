@@ -1,10 +1,10 @@
 .press
-  margin-top: -8px
+  background: #F7F9FF
+  padding: 32px 0 44px
+  position: relative
 
   &__container
-    background: #F7F9FF
-    padding: 32px 0 44px
-    position: relative
+    margin-top: -8px
 
   &__buttons
     position: absolute
@@ -34,11 +34,12 @@
     font-size: 1.6rem
     line-height: 1.8rem
 
-  &__descr
-    font-style: italic
-    font-size: 1.6rem
-    line-height: 2rem
-    margin-bottom: 16px
+  &__inner
+
+    &_descr
+      font-size: 1.6rem
+      line-height: 2rem
+      margin-bottom: 16px
 
   &__more
     display: inline-block
@@ -63,18 +64,38 @@
 
   .press
 
-    &__descr
-      width: 75%
+    &__inner
+      &_descr
+        width: 75%
 
 @media ($desktop)
 
   .press
-    margin-top: -20px
+    background: none
+    padding: 89px 0 0
+    position: relative
+    z-index: 0
+
+    &__title
+      margin-bottom: 39px
+      font-size: 4.8rem
+      line-height: normal
+      text-align: center
+      font-weight: 500
 
     &__container
-      background: none
-      padding: 68px 0 0
-      margin-right: -50px
+      position: relative
+
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        left: 50%
+        top: 0
+        bottom: 0
+        right: 0
+        display: block
+        background-color: #f7f9ff
 
     &__descr
       width: 100%
@@ -82,16 +103,19 @@
     &__block
       display: flex
       padding: 0
+      border-bottom-width: 2px
 
       &:first-child
 
         .press__inner
-          padding-top: 61px
+          padding-top: 32px
 
         .press__pic
           padding-top: 60px
 
       &:last-child
+
+        border-bottom: 0
 
         .press__inner
           padding-bottom: 82px
@@ -107,25 +131,30 @@
     &__inner
       background: #F7F9FF
       width: 50%
-      padding: 32px 66px 29px 16px
+      text-align: left
+      padding: 17px 0 31px 16px
       box-sizing: border-box
 
-    &__title
-      margin-bottom: 25px
-      font-size: 2.4rem
-      line-height: 2.8rem
+      &_title
+        font-size: 24px
+        font-weight: 300
+        margin-bottom: 27px
 
-    &__descr
-      font-size: 1.8rem
-      line-height: 2.2rem
-      margin-bottom: 24px
+      &_descr
+        font-size: 1.8rem
+        line-height: 2.4rem
+        margin-bottom: 19px
+        width: auto
 
     &__more
-      font-size: 1.6rem
+      font-size: 1.4rem
       line-height: 2rem
+      text-transform: uppercase
+      font-weight: 500
+      text-align: left
 
     &__i
-      top: 0
+      top: 1px
 
     &__logo
       display: none

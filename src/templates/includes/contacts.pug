@@ -1,39 +1,40 @@
-.contacts__container
+.contacts
   .wrap
-    .contacts
-      h3.title Contacts us
-      dl.contacts__list
-        dt
-          +svg('contacts__i', 'contacts-light')
-          | General inquiries
-        dd
-          a(href="mailto:info@chronobank.io" target="_blank") info@chronobank.io
-        dt
-          +svg('contacts__i', 'contacts-support')
-          | Technical support
-        dd
-          a(href="mailto:support@chronobank.io" target="_blank") support@chronobank.io
-        dt
-          +svg('contacts__i', 'contacts-telegram')
-          | Telegram
-        dd
-          a(href="#" target="_blank") chronobank
-        dt
-          +svg('contacts__i', 'contacts-slack')
-          | Slack
-        dd
-          a(href="#" target="_blank") chronobank
-    form.contacts__form.js-validate(action="" name="contacts")
-      .contacts__inner
-        h4.contacts__title Get in touch with our team
-        .field__block_2
-          label.field__label(for="contacts_name") Your name
-          input(type="text" required name="contacts_name").field_2#contacts_name.js-field
-        .field__block_2
-          label.field__label(for="contacts_email") Email
-          input(type="email" required name="contacts_email").field_2#contacts_email.js-field
-        .field__block_2
-          label.field__label(for="contacts_message") Message
-          textarea(required name="contacts_message").field_2#contacts_message.js-field
-        .button__container
-          input(type="submit" value="Send message").button
+    .contacts__container
+      .contacts__content
+        h3.contacts__title Contacts us
+        dl.contacts__list
+          dt
+            +svg('contacts__i', 'contacts-light')
+            | General inquiries
+          dd
+            a(href="mailto:info@chronobank.io" target="_blank") info@chronobank.io
+          dt
+            +svg('contacts__i', 'contacts-support')
+            | Technical support
+          dd
+            a(href="mailto:support@chronobank.io" target="_blank") support@chronobank.io
+          dt
+            +svg('contacts__i', 'contacts-telegram')
+            | Telegram
+          dd
+            a(href="#" target="_blank") chronobank
+          dt
+            +svg('contacts__i', 'contacts-slack')
+            | Slack
+          dd
+            a(href="#" target="_blank") chronobank
+      form.contacts__form.js-validate(action="" name="contacts")
+        .contacts__inner
+          h4.contacts__inner_title Get in touch with our team
+          .field__block_2
+            label.field__label(for="contacts_name") Your name
+            input(type="text" required name="contacts_name").field_2#contacts_name.js-field
+          .field__block_2
+            label.field__label(for="contacts_email") Email
+            input(type="email" required name="contacts_email").field_2#contacts_email.js-field
+          .field__block_2
+            label.field__label(for="contacts_message") Message
+            textarea(required name="contacts_message").field_2#contacts_message.js-field
+          .button__container
+            input(type="submit" value="Send message").button
