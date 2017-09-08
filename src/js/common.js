@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Slider
     var swiperRoadmap = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        slidesPerView: 4,
+        slidesPerView: 'auto',
         centeredSlides: true,
         paginationClickable: true,
         spaceBetween: 30,
