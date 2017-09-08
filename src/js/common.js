@@ -44,45 +44,55 @@ function animateScroll(el, e) {
 }
 
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function() {
+    $(function () {
+        var data = {
+            rss_url: 'https://blog.chronobank.io/feed'
+        };
+        $.get('https://api.rss2json.com/v1/api.json', data, function (response) {
+            if (response.status == 'ok') {
+                var html = '';
+                $.each(response.items, function (k, item) {
+                    if(k < 4){
+                        var self = item;
+                        var title, url, descr, img, pic;
 
-    $.ajax({
-        url: 'https://medium.com/feed/@Chronobank',
-    })
-        .done(function (response) {
-            var html = '';
-            console.log(response);
-            $(response).find('item').each(function (i) {
-                if (i < 4) {
-                    var self = $(this);
-                    var title, url, descr, pic;
+                        title = self.title;
+                        url = self.link;
+                        var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
+                        yourString = yourString.replace(/<p[^>]*>/g,"");
+                        yourString = yourString.replace(/<em[^>]*>/g,"");
+                        var maxLength = 120; // maximum number of characters to extract
+                        //trim the string to the maximum length
+                        var trimmedString = yourString.substr(0, maxLength);
+                        //re-trim if we are in the middle of a word
+                        descr = trimmedString.substr(Math.max(0, trimmedString.lastIndexOf(">") + 1), Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
+                        var tagIndex = item.description.indexOf('<img');
+                        var srcIndex = item.description.substring(tagIndex).indexOf('src=') + tagIndex; // Find where the src attribute starts
+                        var srcStart = srcIndex + 5; // Find where the actual image URL starts; 5 for the length of 'src="'
+                        var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
+                        var pic = item.description.substring(srcStart, srcEnd); // Extract just the URL
 
-                    title = self.find('title').text();
-                    url = self.find('guid').text();
-                    descr = self.find('content')['prevObject'].text();
-                    descr = self[0].getElementsByTagName("encoded")[0].childNodes[0].nodeValue;
-                    pic = descr.match(/src="http([^">]+)/g);
-                    pic = pic[0].match(/http([^">]+)/g);
-                    descr = descr.replace(/<\/?[^>]+(>|$)/g, "");
-                    descr = descr.replace(/  /g, "");
-                    descr = descr.substring(0, 110);
+                        console.log(title, url, pic, descr);
 
-                    console.log(title, url, pic, descr);
+                        html = html + '<a class="news__block" target="_blank" href="' + url + '"><div class="news__pic" style="background-image: url(' + pic + ')"></div><h4 class="news__block_title">' + title + '</h4><p class="news__block_descr">' + descr + '...</p></a>'
 
-                    html = html + '<a class="news__block" target="_blank" href="' + url + '"><div class="news__pic" style="background-image: url(' + pic + ')"></div><h4 class="news__title">' + title + '</h4><p class="news__descr">' + descr + '...</p></a>'
-                }
-                $('.news').html(html);
-            })
-        });
+                    }
+                    $('.news__container').html(html);
+                });
+            }
+        })
+    });
+
 
 
     // Nav
     $('.nav__i').on('click', function () {
         $('.nav__block').fadeIn(300);
-    })
+    });
     $('.js-close-menu').on('click', function () {
         $('.nav__block').fadeOut(300);
-    })
+    });
     $(document).keyup(function (e) {
         if (e.keyCode == 27) {
             $('.nav__block').fadeOut(300);
@@ -96,16 +106,16 @@ document.addEventListener('DOMContentLoaded', function () {
             self.fadeOut(300);
         }
         e.preventDefault();
-    })
+    });
 
 
     // Video
     $('.js-video').on('click', function () {
         $('.header__video-container').addClass('header__video_opened');
-    })
+    });
     $('.header__video-container').on('click', function () {
         $('.header__video-container').removeClass('header__video_opened');
-    })
+    });
     $(document).keyup(function (e) {
         if (e.keyCode == 27) {
             $('.header__video-container').removeClass('header__video_opened');
@@ -118,31 +128,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     // Slider
-    var swiperPartners = new Swiper('.js-swiper', {
-        centeredSlides: true,
-        slidesPerView: 'auto',
-        spaceBetween: 16,
-        speed: 300,
+    var swiperRoadmap = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-    })
+        slidesPerView: 4,
+        centeredSlides: true,
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true
+    });
 
     // Form validate
     $('.js-validate').each(function () {
         $(this).validate();
-    })
+    });
 
     // Animate 1st slide
     var tl1 = new TimelineLite();
     tl1.fromTo('.js-first-slide', 2, {
-        opacity: 0,
+        opacity: 0
     }, {
-        opacity: 1,
-    })
+        opacity: 1
+    });
 
     // Animate scroll
     $('.js-scrollto').on('click', function (e) {
         animateScroll($(this), e);
-    })
+    });
 
     // Animate labels
     $('.js-field').each(function () {
@@ -150,29 +161,29 @@ document.addEventListener('DOMContentLoaded', function () {
         if (self.val() != '') {
             self.parent().addClass('field__filled');
         }
-    })
+    });
     $('.js-field').on('focus', function () {
         $(this).parent().addClass('field__filled');
-    })
+    });
     $('.js-field').on('blur', function () {
         var self = $(this);
         if (self.val() == '') {
             self.parent().removeClass('field__filled');
         }
-    })
+    });
 
 
     // Nav
     $('.js-nav').on('click', function () {
         $('.js-main-container').addClass('nav_opened')
-    })
+    });
     $('.js-nav__close').on('click', function (e) {
         $('.js-main-container').removeClass('nav_opened');
         e.preventDefault();
-    })
+    });
     $('.js-nav__item').on('click', function (e) {
         animateScroll($(this), e);
-    })
+    });
 
     // Dialog
     $('.js-send-dialog').validate({
@@ -187,21 +198,21 @@ document.addEventListener('DOMContentLoaded', function () {
     var dialog = $('.dialog');
     $('.js-show-dialog').on('click', function () {
         dialog.addClass('dialog_opened');
-    })
+    });
     $('.js-hide-dialog').on('click', function () {
         dialog.removeClass('dialog_opened');
-    })
+    });
     $('.js-field').on('focus', function () {
         $(this).parent().addClass('dialog__full');
-    })
+    });
     $('.js-field').on('blur', function () {
         if ($(this)[0].value.length == 0) {
             $(this).parent().removeClass('dialog__full');
         }
-    })
+    });
     $('.js-clear').on('click', function () {
         $('.js-field')[0].value = '';
-    })
+    });
     $(document).keyup(function (e) {
         if (e.keyCode == 27) {
             dialog.removeClass('dialog_opened');
@@ -217,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
         //time in milliseconds before the marquee will start animating
         delayBeforeStart: 0,
         //'left' or 'right'
-        direction: 'left',
+        direction: 'left'
         //true or false - should the marquee be duplicated to show an effect of continues flow
         // duplicated: true
     });
@@ -243,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
 
-})
+});
 
 
 // Init Fonts
