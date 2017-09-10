@@ -1,0 +1,86 @@
+.help
+	.wrap
+		nav.help__menu
+			ul.help__menu_list
+				li.help__menu_list-item
+					a(href="#Basics")
+						+svg('help__i', 'help-base')
+						span.help__menu_list-item_text Basics
+					a(href="#Chronomint")
+						+svg('help__i', 'help-chronomint')
+						span.help__menu_list-item_text Chronomint
+					a(href="#Time")
+						+svg('help__i', 'help-section')
+						span.help__menu_list-item_text Time
+					a(href="#Token")
+						+svg('help__i', 'help-section')
+						span.help__menu_list-item_text Labour-hour token
+					a(href="#Mobile") 
+						+svg('help__i', 'help-section')
+						span.help__menu_list-item_text Mobile app for iOS
+					a(href="#Mac")
+						+svg('help__i', 'help-section')
+						span.help__menu_list-item_text Desktop app for macOS
+					a(href="#Windows")
+						+svg('help__i', 'help-section')
+						span.help__menu_list-item_text Desktop app for Windows
+		.help__content
+			.help__search
+				input.help__search_input
+			.help__questions
+				.help__section
+					h4.help__section_title Basics
+					ul.help__questions-list
+						- for(var i = 0; i < 3; i++) {
+							li.help__question
+								h5.help__question_name How to create a new account?
+								.help__question_answer
+									.help__question_answer-par
+										h6.help__question_answer-par_title Editing
+										.help__question_answer-par_text
+											p Expansion panels are best used for lightweight editing of an element, such as selecting a value for a setting.
+											p For example, an app that contains tables may use expansion panels to adjust settings on table elements.
+									.help__question_answer-par
+										h6.help__question_answer-par_title Creation flows
+										.help__question_answer-par_text
+											p Expansion panels may be displayed in a sequence to form creation flows.
+											p For example, a tool for creating ad campaigns may display a series of expansion panels to collect campaign details.
+						- }
+				.help__section
+					h4.help__section_title Chronomint
+					ul.help__questions-list
+						- for(var i = 0; i < 3; i++) {
+						li.help__question
+							h5.help__question_name How to create a new account?
+							.help__question_answer
+								.help__question_answer-par
+									h6.help__question_answer-par_title Editing
+									.help__question_answer-par_text
+										p Expansion panels are best used for lightweight editing of an element, such as selecting a value for a setting.
+										p For example, an app that contains tables may use expansion panels to adjust settings on table elements.
+								.help__question_answer-par
+									h6.help__question_answer-par_title Creation flows
+									.help__question_answer-par_text
+										p Expansion panels may be displayed in a sequence to form creation flows.
+										p For example, a tool for creating ad campaigns may display a series of expansion panels to collect campaign details.
+						- }
+				.help__section
+					h4.help__section_title TIME
+					ul.help__questions-list
+						- for(var i = 0; i < 3; i++) {
+						li.help__question
+							h5.help__question_name How to create a new account?
+							.help__question_answer
+								.help__question_answer-par
+									h6.help__question_answer-par_title Editing
+									.help__question_answer-par_text
+										p Expansion panels are best used for lightweight editing of an element, such as selecting a value for a setting.
+										p For example, an app that contains tables may use expansion panels to adjust settings on table elements.
+								.help__question_answer-par
+									h6.help__question_answer-par_title Creation flows
+									.help__question_answer-par_text
+										p Expansion panels may be displayed in a sequence to form creation flows.
+										p For example, a tool for creating ad campaigns may display a series of expansion panels to collect campaign details.
+						- }
+
+

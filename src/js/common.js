@@ -63,8 +63,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         var srcEnd = item.description.substring(srcStart).indexOf('"') + srcStart; // Find where the URL ends
                         var pic = item.description.substring(srcStart, srcEnd); // Extract just the URL
 
-                        console.log(title, url, pic, descr);
-
                         html = html + '<a class="news__block" target="_blank" href="' + url + '"><div class="news__pic" style="background-image: url(' + pic + ')"></div><h4 class="news__block_title">' + title + '</h4><p class="news__block_descr">' + descr + '...</p></a>'
 
                     }
@@ -120,11 +118,27 @@ document.addEventListener('DOMContentLoaded', function() {
     // Slider
     var swiperRoadmap = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
-        slidesPerView: 'auto',
+        paginationWrapper: '.swiper-pagination-wrapper',
+		    slidesPerView: 'auto',
         centeredSlides: true,
         paginationClickable: true,
+        paginationLine: true,
         spaceBetween: 40,
-        grabCursor: true
+        grabCursor: true,
+        onInit: function(swiper) {
+	        $('.swiper-pagination').width((swiper.slides.length - 1) * 296 + 182);
+        },
+        onDiffChange: function(swiper) {
+	        //$('.swiper-pagination').width((-swiper.translatesDiff) + 'px');
+        },
+        onProgress: function(swiper, progress){
+            if (progress > 0) {
+	            $('.swiper-filling-line').transform('scaleX(' + progress + ')');
+            }
+            else {
+	            $('.swiper-filling-line').transform('scaleX(0)');
+            }
+        }
     });
 
     // Form validate

@@ -7,6 +7,33 @@
     width: 24px
     height: 24px
 
+    &-mobile
+      display: block
+      height: 48px
+      width: 162px
+
+    &-desktop
+      display: block
+      width: 160px
+      height: 48px
+
+    &-slack-big
+      position: absolute
+      z-index: 0
+      opacity: 0.4
+
+    &-telegram-big
+      position: absolute
+      z-index: 0
+      opacity: 0.4
+
+    &-small
+      width: 15px
+      height: 15px
+      margin-right: 5px
+      display: inline-block
+      vertical-align: middle
+
   &__container
     padding-top: 33px
 
@@ -96,41 +123,31 @@
   &__link
     display: block
     margin: 26px auto 0
-    width: 166px
-    height: 54px
-
-    img
-      display: block
-      width: 166px
-      height: 54px
 
   &__join
     margin-bottom: 32px
 
     &_content
-      background: url(../i/join.png) no-repeat
-      background-size: cover
+      background: no-repeat center, linear-gradient(to left, #644ebf, #262448)
       color: $white
       padding: 32px 16px
       border-radius: 2px
       box-shadow: 0 8px 16px rgba(0,0,0,.24)
 
-      p
+      & > p
         font-size: 2.8rem
         line-height: 3.4rem
         margin-bottom: 40px
 
-      .button
-        width: 160px
 
   &__info
     font-size: 1.4rem
     line-height: 2.4rem
 
-    p
+    & > p
       margin-bottom: 24px
 
-    b
+    & > b
       color: #FFAB00
 
 @media ($tablet)
@@ -176,7 +193,6 @@
     &__join
 
       &_content
-        background-image: url(../i/join_big.png)
         padding: 30px 50px
 
 @media ($desktop)
@@ -336,9 +352,14 @@
         padding-left: 40px
         padding-bottom: 11px
 
-        span
+        p
           display: inline-block
           padding-top: 5px
+          color: #66669f
+
+          strong
+            font-weight: normal
+            color: #00005f
 
     &__links
       background-color: #f7f9ff
@@ -358,6 +379,10 @@
       display: inline-block
       vertical-align: middle
 
+      &.desktop
+        border-radius: 2px
+        box-shadow: 0 2px 2px 0 rgba(118, 143, 255, 0.24), 0 0 2px 0 rgba(118, 143, 255, 0.12)
+
     &__join
       margin-top: 226px
       margin-bottom: 63px
@@ -367,6 +392,15 @@
         display: flex
         align-items: center
         justify-content: space-between
+        border-radius: 2px
+        z-index: 0
+        position: relative
+        box-shadow: 0 16px 24px 0 rgba(100, 78, 191, 0.2)
+
+        a
+          span
+            vertical-align: middle
+            display: inline-block
 
         p
           width: 35%

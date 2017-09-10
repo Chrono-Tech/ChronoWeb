@@ -29,7 +29,7 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'development'; //
 
 gulp.task('styles', function () {
 	const f = filter(['src/sass/**/*.sass'], {restore: true});
-	return gulp.src([require.resolve('normalize.css'), 'node_modules/swiper/dist/css/swiper.min.css', 'src/sass/common.sass'])
+	return gulp.src(['node_modules/swiper/dist/css/swiper.min.css', 'src/sass/common.sass'])
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(sourcemaps.init())
 		.pipe(f)

@@ -39,7 +39,7 @@
     background: #F7F9FF
     // margin-right: 16px
     transition: all $fast
-    padding: 131px 16px 24px
+    padding: 24px 16px
     box-sizing: border-box
     position: relative
     color: $black
@@ -47,12 +47,6 @@
 
     &:hover
       box-shadow: 0 8px 16px rgba(0, 0, 0, .24)
-
-  &__logo
-    display: block
-    position: absolute
-    left: 16px
-    top: 24px
 
   &__name
     font-size: 1.6rem
@@ -65,17 +59,19 @@
     line-height: 2.4rem
 
   &__logo
-    margin-bottom: 24px
     display: block
+    max-height: 100%
+    max-width: 100%
 
+    &-box
+      width: 120px
+      height: 80px
+      margin-bottom: 20px
 
 @media ($desktop)
 
   .partners
     padding-top: 91px
-
-    .swiper-pagination
-      display: none
 
     &__title
       text-align: center

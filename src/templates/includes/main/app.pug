@@ -11,36 +11,38 @@
           ul.app__list
             li
               +svg('app__i', 'list')
-              span Manage ETH and any ERC20 tokens (not just TIME and LH), including secure multi-signature support when using hardware key storage.
+              p.
+                #[strong Manage ETH and any ERC20 tokens] (not just TIME and LH), including secure multi-signature support when using hardware key storage.
             li
               +svg('app__i', 'list')
-              span Manage BTC, LTC and a number of other popular cryptocurrencies (coming soon).
+              p.
+                #[strong Manage BTC, LTC] and a number of other popular cryptocurrencies (coming soon).
             li
               +svg('app__i', 'list')
-              span Create your own ERC20 token, with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
+              p #[strong Create your own ERC20 token], with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
             li
               +svg('app__i', 'list')
-              span Distributed cryptocurrency market on top of 0x protocol (coming soon).
+              p #[strong Distributed cryptocurrency market] on top of 0x protocol (coming soon).
             li
               +svg('app__i', 'list')
-              span Voting function: TIME token holders will be able to vote on important company decisions.
+              p #[strong Voting function:] TIME token holders will be able to vote on important company decisions.
             li
               +svg('app__i', 'list')
-              span Collection of rewards (long-term holders can place their TIME tokens on a deposit contract balance and receive fees from LH and LaborX operations).
+              p #[strong Collection of rewards] (long-term holders can place their TIME tokens on a deposit contract balance and receive fees from LH and LaborX operations).
             li
               +svg('app__i', 'list')
-              span LOC Management (Chronobank Manager Only).
+              p #[strong LOC Management] (Chronobank Manager Only).
             li
               +svg('app__i', 'list')
-              span LH token issuance (Chronobank Manager Only).
+              p #[strong LH token issuance] (Chronobank Manager Only).
         .app__aside
           img(src="../i/chronomint.png" srcset="../i/@2x/chronomint.png 2x").app__pic
         nav.app__links
           h4.app__links_title Downloads
-          a(href="#").app__link
-            img(src="../i/appstore.png" srcset="../i/@2x/appstore.png")
-          a(href="#").app__link
-            img(src="../i/playstore.png" srcset="../i/@2x/playstore.png")
+          a(href="#").app__link.desktop
+            +svg('app__i-desktop', 'download-macos')
+          a(href="#").app__link.desktop
+            +svg('app__i-desktop', 'download-windows')
   .app__container.mobile
     .wrap
       .app__content
@@ -52,28 +54,34 @@
           ul.app__list
             li
               +svg('app__i', 'list')
-              span Manage ETH and any ERC20 tokens (not just TIME and LH), including secure multi-signature support when using hardware key storage.
+              p #[strong Manage ETH and any ERC20 tokens] (not just TIME and LH), including secure multi-signature support when using hardware key storage.
             li
               +svg('app__i', 'list')
-              span Manage BTC, LTC and a number of other popular cryptocurrencies (coming soon).
+              p #[strong Manage BTC, LTC] and a number of other popular cryptocurrencies (coming soon).
             li
               +svg('app__i', 'list')
-              span Create  your own ERC20 token, with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
+              p #[strong Create your own ERC20 token], with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
             li
               +svg('app__i', 'list')
-              span Distributed cryptocurrency market on top of 0x protocol (coming soon).
+              p #[strong Distributed cryptocurrency market] on top of 0x protocol (coming soon).
         nav.app__links
           h4.app__links_title Downloads
           a(href="#").app__link
-            img(src="../i/appstore.png" srcset="../i/@2x/appstore.png")
+            +svg('app__i-mobile', 'app-store')
           a(href="#").app__link
-            img(src="../i/playstore.png" srcset="../i/@2x/playstore.png")
+            +svg('app__i-mobile', 'play-market')
   .app__join
     .wrap
       .app__join_content
-        a(href="#").button_sec Join our Slack
+        a(href="#").button_sec.slack
+          +svg('app__i-small', 'slack-blue')
+          span Join our Slack
         p Get in touch with our team!
-        a(href="#").button_sec Join our Slack
+        a(href="#").button.telegram
+          +svg('app__i-small', 'telegram-white')
+          span Join our Telegram
+        +svg('app__i-slack-big', 'slack-big')
+        +svg('app__i-telegram-big', 'telegram-big')
   .app__container.laborx
     .wrap
       h2.app__title
