@@ -1,0 +1,143 @@
+.header
+  min-height: 100vh
+  background: no-repeat center center #f7f9ff
+  background-size: cover
+  padding-bottom: 80px
+  padding-top: 22px
+  box-sizing: border-box
+  position: relative
+
+  &__logo
+    padding-left: 38px
+    position: relative
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    font-size: 2.3rem
+    line-height: 1
+    letter-spacing: -.77px
+    color: #D9A162
+
+    &-i
+      width: 31px
+      height: 21px
+      position: absolute
+      left: 0
+      top: 0
+      display: block
+
+  .wrap
+    position: relative
+    z-index: 0
+
+    &:after
+      content: ''
+      position: absolute
+      z-index: -1
+
+  &__block
+    padding-top: 35px
+
+  &__title,
+  &__descr
+    line-height: normal
+    font-weight: 300
+
+  &__descr
+    font-size: 1.8rem
+    margin-bottom: 35px
+
+  &__title
+    font-size: 2.8rem
+
+  &__i
+    position: absolute
+    left: 0
+    top: -4px
+    width: 25px
+    height: 25px
+
+.nav
+  position: absolute
+  right: 0
+  top: 0
+
+@media ($tablet)
+
+  .header
+    min-height: 700px
+    background-color: #f7f9ff
+    padding-top: 0
+    padding-bottom: 0
+
+    &__logo
+      padding-left: 58px
+      top: 37px
+      font-size: 3.6rem
+      letter-spacing: -1.2px
+
+      &-i
+        width: 49px
+        height: 33px
+
+    &__label
+      background-color: #ffab00
+      border-radius: 2px
+      text-transform: uppercase
+      padding: 4px 10px
+      margin-right: 16px
+
+    .footer__logo-block
+      position: absolute
+      top: 33px
+
+    .footer__logo
+      font-size: 3.6rem
+      line-height: 4.3rem
+      letter-spacing: -1.2px
+
+    .wrap
+      //min-height: 100vh
+      padding-top: 30px
+      box-sizing: border-box
+
+      &:after
+        width: 638px
+        height: 543px
+        background: url(../i/header-team.png) no-repeat center
+
+    &__block
+      padding-top: 0
+
+    &__title
+      font-size: 5.3rem
+
+    &__descr
+      margin-bottom: 42px
+      font-size: 3.6rem
+
+@media ($desktop)
+
+  .header
+    min-height: 615px
+    overflow: hidden
+
+    .wrap
+
+      &:after
+        width: 638px
+        height: 543px
+        background: url(../i/header-team.png) no-repeat center
+        top: 78px
+        right: -75px
+
+    &__title
+      font-size: 6.3rem
+
+    &__descr
+      width: 550px
+      margin-bottom: 9px
+
+    &__block
+      margin-top: 200px

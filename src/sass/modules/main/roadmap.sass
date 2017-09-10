@@ -64,10 +64,43 @@
 
   .roadmap
     padding-top: 91px
-    padding-bottom: 100px
+    padding-bottom: 200px
 
     .swiper-pagination
       bottom: -60px !important
+      height: 8px
+      background: white
+      position: relative
+      z-index: 0
+
+      &::before
+        content: ''
+        position: absolute
+        z-index: -1
+        top: 0
+        bottom: 0
+        left: 0
+        right: 50%
+        background-color: #768fff
+
+    .swiper-pagination-bullet
+      width: 24px
+      height: 24px
+      background-color: #644ebf
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      border-radius: 50%
+      opacity: 1
+      position: relative
+      top: -8px
+
+      &::before
+        content: ''
+        border-radius: 50%
+        width: 8px
+        height: 8px
+        background: white
 
     &__title
       text-align: center
@@ -97,10 +130,55 @@
       padding: 124px 24px 50px
       border-radius: 2px
       background-color: white
-      box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2);
+      box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
       width: 256px
       position: relative
 
+      &::after
+        content: ''
+        position: absolute
+        bottom: -25px
+        left: 50%
+        margin-left: -5px
+        border: 10px solid transparent
+        border-top: 15px solid white
+        display: block
+        width: 0
+        height: 0
+
+
+      &.today
+        width: auto
+        padding: 0
+        box-shadow: none
+        background: transparent
+        border: none
+
+        &::after
+          display: none
+
+        .roadmap__point
+          padding: 15px 24px
+          border-radius: 2px
+          background-color: #ffffff
+          box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+          position: relative
+          top: 470px
+
+          &_i
+            height: 32px
+            width: 9px
+            display: inline-block
+            vertical-align: middle
+
+          &_text
+            margin-left: 16px
+            display: inline-block
+            vertical-align: middle
+            font-size: 2.0rem
+            font-weight: 500
+            text-align: left
+            color: #0039cb
     &__logo
       width: 100%
       height: 100%

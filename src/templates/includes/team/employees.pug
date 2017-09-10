@@ -1,0 +1,26 @@
+.employees
+	.wrap
+		ul.employees__list
+			li.employees__text
+				h3.employees__title We are making revolution for the recruitment industry
+				.employees__descr
+					p Our leadership team brings together expertise across product, design, engineering, sales, and marketing from companies including Google, Facebook, Amazon, Box, and Atlassian.
+					p Our leadership team brings together expertise across product, design, engineering, sales, and marketing from companies including Google, Facebook, Amazon, Box, and Atlassian.
+			- for(var i = 0; i < 10; i++) {
+				li.employees__human
+					.employees__human_face
+						+svg('employees__face', 'face')
+						.employees__human_contacts
+							a(href="#" target="_blank")
+								+svg('employees__i', 'employees-mail')
+							a(href="#" target="_blank")
+								+svg('employees__i', 'employees-twitter')
+							a(href="#" target="_blank")
+								+svg('employees__i', 'employees-facebook')
+							a(href="#" target="_blank")
+								+svg('employees__i', 'employees-telegram')
+					p.employees__human_name Sergei Sergienko
+					p.employees__human_position Chief Executive Officer
+					span.employees__human_bio-link Read bio
+					.employees__human_bio Baaaa
+			- }

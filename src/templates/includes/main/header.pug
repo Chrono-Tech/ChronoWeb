@@ -3,14 +3,14 @@
   .header__video-block
     //- <iframe width="560" height="315" src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
     <iframe src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
-header.header.js-first-slide
+header.header.js-first-slide(style={opacity: '1'})
   .wrap
-    .header__logo 
+    .header__logo
       +svg('header__logo-i', 'logo-chronobank')
       | #[span.footer__logo-color Chrono]bank.io
     a.header__news(href="#")
       .header__label new
-      b Jun 4 
+      b Jun 4
       | | How I rediscovered my love for JavaScript after throwing 90% of it in the trash.
     .nav
       img(src="../i/menu.png" srcset="../i/@2x/menu.png 2x").nav__i
@@ -32,41 +32,41 @@ header.header.js-first-slide
                   .nav__products-name LaborX
                   .nav__products-descr Our product helps people lorem ipsum subtitle
           li.nav__item.nav__item_hover
-            a(href="#").nav__item.nav__item_label.js-close-menu Team
+            a(href="/team.html").nav__item.nav__item_label.js-close-menu Team
           li.nav__item.nav__item_hover
-            a(href="#").nav__item.nav__item_label.js-close-menu FAQ
+            a(href="/faq.html").nav__item.nav__item_label.js-close-menu FAQ
           li.nav__item.nav__item_hover
-            a(href="https://medium.com/@Chronobank" target="_blank").nav__item.js-close-menu Blog
+            a(href="https://medium.com/@Chronobank" target="_blank").nav__item.nav__item_label.js-close-menu Blog
           li.nav__item.nav__item_hover
             a(href="#").nav__item.nav__item_label.js-close-menu Contacts
-          li.nav__item
-            a(href="#").nav__item.nav__login.js-close-menu
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__login.nav__item_label.js-close-menu
               +svg('nav__login-i', 'login')
               | Login
           li.nav__lang
             a(href="#").nav__lang-current.js-nav-sec Eng
             ul.nav__lang-list
               li
-                a(href="#").current 
+                a(href="#").current
                   +svg('nav__lang-i', 'menu')
                   | Rus
               li
-                a(href="#") 
+                a(href="#")
                   +svg('nav__lang-i', 'menu')
                   | Rus
               li
-                a(href="#") 
+                a(href="#")
                   +svg('nav__lang-i', 'menu')
                   | Rus
-                a(href="#") 
-                  +svg('nav__lang-i', 'menu')
-                  | Rus
-              li
-                a(href="#") 
+                a(href="#")
                   +svg('nav__lang-i', 'menu')
                   | Rus
               li
-                a(href="#") 
+                a(href="#")
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+              li
+                a(href="#")
                   +svg('nav__lang-i', 'menu')
                   | Rus
     .header__block
@@ -85,22 +85,3 @@ header.header.js-first-slide
           .widjet__logo
             img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
           .widjet__wrap.js-widjet(data-url="../data/test.json")
-            //- .widjet__name Bittrex
-            //- .widjet__inner
-            //-   .widjet__sum 0.1223344
-            //-   .widjet__currency USD
-            //- .widjet__percent.widjet__percent_plus
-            //-   | 8.82773%
-            //-   +svg('widjet__i', 'plus')
-        //- .widjet__block
-        //-   .widjet__logo
-        //-     img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
-        //-   .widjet__wrap
-        //-     .widjet__name Bittrex
-        //-     .js-widjet
-        //-       .widjet__inner
-        //-         .widjet__sum 0.1223344
-        //-         .widjet__currency USD
-        //-       .widjet__percent.widjet__percent_minus
-        //-         | 8.82773%
-        //-         +svg('widjet__i', 'minus')

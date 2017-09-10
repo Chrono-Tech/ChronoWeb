@@ -1,15 +1,5 @@
 'use strict';
 
-window.jQuery = require('jquery');
-window.$ = window.jQuery;
-// var FontFaceObserver = require('font-face-observer');
-var TweenLite = require('gsap').TweenLite;
-var ScrollToPlugin = require('gsap/ScrollToPlugin');
-var Swiper = require('swiper');
-require("../../node_modules/jquery-validation/dist/jquery.validate.js");
-require("../../node_modules/jquery.marquee/jquery.marquee.min.js");
-
-
 // Closest Polyfill for IE
 (function (ELEMENT) {
     ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
@@ -133,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         slidesPerView: 'auto',
         centeredSlides: true,
         paginationClickable: true,
-        spaceBetween: 30,
+        spaceBetween: 40,
         grabCursor: true
     });
 

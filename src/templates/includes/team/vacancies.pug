@@ -1,0 +1,12 @@
+.vacancies
+	.wrap
+		h2.vacancies__title Jobs at Chronobank.io
+		ul.vacancies__list
+			- for(var i = 0; i < 4; i++) {
+				li.vacancies__vacancy
+					h4.vacancies__vacancy_title Javascript engineer
+					.vacancies__vacancy_describe
+						p We’re looking for a JavaScript engineer with in-depth knowledge of Node.js / React / Redux.
+						p Much better if you have experience with PostgreSQL, MongoDB, RabbitMQ and/or blockchain
+					a(href="#").vacancies__vacancy_button Apply
+			- }
