@@ -19,18 +19,15 @@
       margin-bottom: 18px
 
     &__facts-list
-      display: flex
-      justify-content: space-around
-      flex-wrap: wrap
-      align-content: space-around
       list-style: none
+      text-align: center
 
     &__pic
       line-height: normal
       display: inline-flex
       justify-content: center
       align-items: center
-      padding: 24px
+      padding: 12px
       box-sizing: border-box
       border-radius: 50%
       background-color: #f7f9ff
@@ -39,7 +36,21 @@
 
     &__fact
       width: 200px
-      text-align: center
+      display: inline-block
+      vertical-align: top
+      margin: 0 44px
+
+      &:nth-child(4n-4)
+        margin-left: 0
+
+      &:nth-child(4n-1)
+        margin-right: 0
+
+      &:nth-child(3)
+        margin-right: 56px
+
+      &:nth-child(1)
+        margin-left: 56px
 
       &_text
         margin-bottom: 16px
