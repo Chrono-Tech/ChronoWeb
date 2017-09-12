@@ -44,27 +44,20 @@ footer.footer
             +svg('footer__i', 'telegram')
           a(href="https://github.com/ChronoBank" target="_blank")
             +svg('footer__i', 'github')
-    .footer__block.footer__block_social
-      h4.footer__title social network
-      nav.footer__social
-        a(href="https://www.facebook.com/ChronoBank.io" target="_blank")
-          +svg('footer__i', 'facebook')
-        a(href="https://twitter.com/ChronobankNews" target="_blank")
-          +svg('footer__i', 'twitter')
-        //- a(href="#" target="_blank")
-        //-   +svg('footer__i', 'instagram')
-        a(href="https://www.reddit.com/r/ChronoBank/" target="_blank")
-          +svg('footer__i', 'reddit')
-        a(href="https://chronobank.herokuapp.com/" target="_blank")
-          +svg('footer__i', 'slack')
-        a(href="https://telegram.me/chronobank" target="_blank")
-          +svg('footer__i', 'telegram')
-        a(href="https://github.com/ChronoBank" target="_blank")
-          +svg('footer__i', 'github')
-    form(action="" name="subscribe").footer__subscribe.js-validate
-      h4.footer__title newsletter
-      .field__block
-        input(type="email" placeholder="Enter email for news" required).field
-      .button__container
-        input(type="submit" value="subscribe").button_sec
+    .footer__section
+      .footer__block.footer__block_downloads
+        h4.footer__title Download
+        ul.footer__links
+          a(href="#" target="_blank")
+            +svg('footer__i', 'download-icon')
+            span Desktop App for macOS
+          a(href="#" target="_blank")
+            +svg('footer__i', 'download-icon')
+            span Desktop App for Windows
+      form(action="" name="subscribe").footer__subscribe.js-validate
+        h4.footer__title newsletter
+        .field__block
+          input(type="email" placeholder="Enter email for news" required).field
+        .button__container
+          input(type="submit" value="subscribe").button_sec
     address.footer__copy Copyright ©2017 Edway Group Pty. Ltd. All Rights Reserved.

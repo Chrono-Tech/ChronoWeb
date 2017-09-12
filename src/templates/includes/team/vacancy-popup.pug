@@ -1,0 +1,22 @@
+.modal#job__modal
+	.modal__dialog.clearfix#job__modal__dialog
+		.modal__dialog__close#job-close__cross
+			+svg('modal__dialog__close__cross', 'close')
+		.modal__dialog__content#job-content
+			h4.modal__dialog__content_title#job__modal__title Javascript engineer
+			p.modal__dialog__content_time#job__modal__time Full-time
+			p.modal__dialog__content_describe#job__modal__describe We’re looking for a JavaScript engineer with in-depth knowledge of Node.js / React / Redux. Much better if you have experience with PostgreSQL, MongoDB, RabbitMQ and/or blockchain
+			form(name="job-contact" action="#").modal__dialog__form#job__modal__form.js-validate
+				.form-field.field__block_2
+					label(for="job__modal__form__input-name").field__label.form-label.modal__dialog__form__label.name#job__modal__form__label-name Your name*
+					input(required maxlength="50" type="text" name="modal_form_name").field_2.modal__dialog__form__input.js-field#job__modal__form__input-name
+				.form-field.field__block_2
+					label(for="job__modal__form__input-email").field__label.modal__dialog__form__label.email#job__modal__form__label-email Email*
+					input(required maxlength="50" type="text" name="modal_form_email").field_2.modal__dialog__form__input.js-field#job__modal__form__input-email
+				.form-field.field__block_2
+					label(for="job__modal__form__input-message").field__label.modal__dialog__form__label.message#job__modal__form__label-message Additional information, links: portfolio url, linkedin, github, telegram, skype etc.
+					textarea(required name="modal_form_message").field_2.modal__dialog__form__input.js-field#job__modal__form__input-message
+				.button__container
+					input(type="submit" value="Send").button
+
+

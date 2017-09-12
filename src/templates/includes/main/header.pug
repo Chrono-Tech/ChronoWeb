@@ -13,9 +13,9 @@ header.header.js-first-slide(style={opacity: '1'})
       b Jun 4
       | | How I rediscovered my love for JavaScript after throwing 90% of it in the trash.
     .nav
-      img(src="../i/menu.png" srcset="../i/@2x/menu.png 2x").nav__i
+      img(src="i/menu.png" srcset="i/@2x/menu.png 2x").nav__i
       .nav__block
-        img(src="../i/logo.png" srcset="../i/@2x/logo.png 2x").nav__logo
+        img(src="i/logo.png" srcset="i/@2x/logo.png 2x").nav__logo
         .nav__close.js-close-menu
         ul.nav__list
           li.nav__item.nav__item_hover.nav__item_expand
@@ -23,18 +23,18 @@ header.header.js-first-slide(style={opacity: '1'})
             ul.nav__products
               li
                 a(href="#")
-                  img(src="../i/nav_logo1.png" srcset="../i/@2x/nav_logo1.png 2x").nav__products-logo
+                  img(src="i/nav_logo1.png" srcset="i/@2x/nav_logo1.png 2x").nav__products-logo
                   .nav__products-name ChronoMint
                   .nav__products-descr Our product helps people lorem ipsum subtitle
               li
                 a(href="#")
-                  img(src="../i/nav_logo2.png" srcset="../i/@2x/nav_logo2.png 2x").nav__products-logo
+                  img(src="i/nav_logo2.png" srcset="i/@2x/nav_logo2.png 2x").nav__products-logo
                   .nav__products-name LaborX
                   .nav__products-descr Our product helps people lorem ipsum subtitle
           li.nav__item.nav__item_hover
-            a(href="/team.html").nav__item.nav__item_label.js-close-menu Team
+            a(href="/team.html" target="_blank").nav__item.nav__item_label.js-close-menu Team
           li.nav__item.nav__item_hover
-            a(href="/faq.html").nav__item.nav__item_label.js-close-menu FAQ
+            a(href="/faq.html" target="_blank").nav__item.nav__item_label.js-close-menu FAQ
           li.nav__item.nav__item_hover
             a(href="https://medium.com/@Chronobank" target="_blank").nav__item.nav__item_label.js-close-menu Blog
           li.nav__item.nav__item_hover
@@ -83,5 +83,5 @@ header.header.js-first-slide(style={opacity: '1'})
       -for (var i = 0; i < 5; i++)
         .widjet__block
           .widjet__logo
-            img(src="../uploads/widjet/bittrex.png" srcset="../uploads/widjet/@2x/bittrex.png 2x")
-          .widjet__wrap.js-widjet(data-url="../data/test.json")
+            img(src="uploads/widjet/bittrex.png" srcset="uploads/widjet/@2x/bittrex.png 2x")
+          .widjet__wrap.js-widjet(data-url="data/test.json")

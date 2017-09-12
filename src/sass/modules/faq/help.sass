@@ -35,6 +35,7 @@
             box-sizing: border-box
             font-weight: 500
             color: #2962ff
+            transition: all $fast
 
             &.active,
             &:hover
@@ -55,11 +56,27 @@
       margin-bottom: 32px
       border-radius: 2px
       width: 100%
+      z-index: 0
+      position: relative
+      background: white
+
+      &::before
+        content: ''
+        width: 18px
+        height: 18px
+        background: no-repeat center url("../i/magnify.svg")
+        background-size: contain
+        position: absolute
+        z-index: -1
+        left: 32px
+        top: 50%
+        margin-top: -9px
 
       &_input
+        background: transparent
         width: 100%
         box-sizing: border-box
-        padding: 15px 15px 15px 40px
+        padding: 15px 15px 15px 65px
         font-size: 16px
 
     &__questions
@@ -87,22 +104,29 @@
       border-radius: 2px
       background-color: white
       box-shadow: 0 4px 8px 0 rgba(118, 143, 255, 0.2), 0 -1px 0 0 #f7f9ff
-      padding: 10px 24px
-      transition: all $fast
+
+      &.show
+        .help__question_answer
+
+          transition: all $fast ease-in
+          max-height: 500px
 
       &_name
-        padding-right: 24px
         font-size: 2.0rem
         font-weight: 500
         color: #0039cb
+        cursor: pointer
+        padding: 10px 24px
 
       &_answer
+        transition: all $fast ease-out
         overflow: hidden
-        height: 0
+        max-height: 0
+        padding: 0 24px
         box-sizing: border-box
 
         &-par
-          margin-bottom: 10px
+          padding: 10px 0
 
           &_title
             font-size: 1.6rem

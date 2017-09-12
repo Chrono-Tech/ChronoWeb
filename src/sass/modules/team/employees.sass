@@ -29,9 +29,24 @@
           margin: 0
 
     &__i
-      display: block
       width: 24px
       height: 24px
+
+      &.employees-mail
+        background: no-repeat center url('../i/employees-mail.svg')
+        background-size: contain
+
+      &.employees-facebook
+        background: no-repeat center url('../i/employees-facebook.svg')
+        background-size: contain
+
+      &.employees-twitter
+        background: no-repeat center url('../i/employees-twitter.svg')
+        background-size: contain
+
+      &.employees-telegram
+        background: no-repeat center url('../i/employees-telegram.svg')
+        background-size: contain
 
     &__list
       display: flex
@@ -60,6 +75,7 @@
         position: relative
         margin-bottom: 24px
         overflow: hidden
+        z-index: 0
 
         &:hover
           box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
@@ -73,6 +89,7 @@
         background-color: #768fff
         justify-content: center
         align-items: center
+        transition: all $fast
         top: 0
         left: 0
         right: 0
@@ -101,6 +118,14 @@
         font-size: 1.4rem
         color: #2962ff
         cursor: pointer
+        background: transparent
+
+        &:hover
+          text-decoration: underline
+
+        &_arrow
+          width: 14px
+          height: 6px
 
       &_bio
         display: none

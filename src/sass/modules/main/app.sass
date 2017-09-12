@@ -14,22 +14,31 @@
 
     &-desktop
       display: block
-      width: 160px
+      width: 159px
       height: 48px
 
     &-slack-big
       position: absolute
       z-index: 0
-      opacity: 0.4
+      left: -21px
+      top: -6px
 
     &-telegram-big
       position: absolute
       z-index: 0
-      opacity: 0.4
+      right: -21px
+      top: -6px
 
-    &-small
-      width: 15px
+    &-slack-small
+      width: 14px
       height: 15px
+      margin-right: 5px
+      display: inline-block
+      vertical-align: middle
+
+    &-telegram-small
+      width: 14px
+      height: 12px
       margin-right: 5px
       display: inline-block
       vertical-align: middle
@@ -379,10 +388,6 @@
       display: inline-block
       vertical-align: middle
 
-      &.desktop
-        border-radius: 2px
-        box-shadow: 0 2px 2px 0 rgba(118, 143, 255, 0.24), 0 0 2px 0 rgba(118, 143, 255, 0.12)
-
     &__join
       margin-top: 226px
       margin-bottom: 63px
@@ -390,6 +395,7 @@
       &_content
         padding: 30px 96px
         display: flex
+        overflow: hidden
         align-items: center
         justify-content: space-between
         border-radius: 2px

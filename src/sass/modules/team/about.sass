@@ -4,8 +4,6 @@
 
   &__i
     display: block
-    width: 72px
-    height: 72px
 
 @media ($desktop)
 
@@ -33,6 +31,8 @@
       background-color: #f7f9ff
       box-shadow: 0 4px 8px 0 rgba(100, 78, 191, 0.2)
       margin-bottom: 24px
+      width: 96px
+      height: 96px
 
     &__fact
       width: 200px
@@ -46,11 +46,49 @@
       &:nth-child(4n-1)
         margin-right: 0
 
+      &:nth-child(1)
+        margin-left: 56px
+
+        .about__i
+          width: 54px
+          height: 72px
+
+      &:nth-child(2)
+
+        .about__i
+          width: 58px
+          height: 39px
+
       &:nth-child(3)
         margin-right: 56px
 
-      &:nth-child(1)
-        margin-left: 56px
+        .about__i
+          width: 73px
+          height: 41px
+
+      &:nth-child(4)
+
+        .about__i
+          width: 48px
+          height: 66px
+
+      &:nth-child(5)
+
+        .about__i
+          width: 34px
+          height: 45px
+
+      &:nth-child(6)
+
+        .about__i
+          width: 58px
+          height: 44px
+
+      &:nth-child(7)
+
+        .about__i
+          width: 50px
+          height: 38px
 
       &_text
         margin-bottom: 16px

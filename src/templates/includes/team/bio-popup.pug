@@ -1,0 +1,22 @@
+.modal#bio__modal
+	.modal__dialog.clearfix#bio__modal__dialog
+		.modal__dialog__close#bio-close__cross
+			+svg('modal__dialog__close__cross', 'close')
+		.modal__dialog__content#bio-content
+			h4.modal__dialog__content_title#bio__modal__title Javascript engineer
+			p.modal__dialog__content_time#bio__modal__time Full-time
+			p.modal__dialog__content_describe#bio__modal__describe We’re looking for a JavaScript engineer with in-depth knowledge of Node.js / React / Redux. Much better if you have experience with PostgreSQL, MongoDB, RabbitMQ and/or blockchain
+			form(name="bio-contact" action="#").modal__dialog__form#bio__modal__form.js-validate
+				.form-field
+					label(for="bio__modal__form__input-name").modal__dialog__form__label.name#bio__modal__form__label-name Your name
+					input(required maxlength="50" type="text" name="modal_form_name").modal__dialog__form__input.js-field#bio__modal__form__input-name
+				.form-field
+					label(for="bio__modal__form__input-email").modal__dialog__form__label.email#bio__modal__form__label-email Email:
+					input(required maxlength="50" type="text" name="modal_form_email").modal__dialog__form__input.js-field#bio__modal__form__input-email
+				.form-field
+					label(for="bio__modal__form__input-message").modal__dialog__form__label.message#bio__modal__form__label-message Message
+					textarea(required name="modal_form_message").modal__dialog__form__input.js-field#bio__modal__form__input-message
+				.button__container
+					input(type="submit" value="Send message").button
+
+

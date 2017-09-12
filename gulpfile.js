@@ -62,7 +62,7 @@ gulp.task('templates', function () {
  *******************************************************************************/
 
 gulp.task('copy', function () {
-	gulp.src(['src/index.html', 'src/{fonts,i,uploads,lib,data}/**/*', '!src/i/sprites/**/*', '!src/i/sprites/'])
+	gulp.src(['src/index.html', 'src/team.html', 'src/faq.html', 'src/{fonts,i,uploads,lib,data}/**/*', '!src/i/sprites/**/*', '!src/i/sprites/'])
 		.pipe(gulp.dest('dist'));
 });
 
@@ -122,10 +122,9 @@ gulp.task('browser-sync', function () {
 	browserSync.init({
 		server: {
 			baseDir: "./dist/",
-			index: "html/index.html"
+			index: "index.html"
 		},
-		open: false,
-		codeSync: false
+		open: false
 	});
 });
 
@@ -135,7 +134,7 @@ gulp.task('browser-sync', function () {
 
 gulp.task('watch', function () {
 	gulp.watch('src/sass/**/*.sass', ['styles']);
-	gulp.watch('i/sprites/**/*.svg', ['svg']);
+	gulp.watch('src/i/sprites/**/*.svg', ['svg']);
 	gulp.watch('src/templates/**/*.pug', ['templates']);
 	gulp.watch(['src/i/**', 'src/uploads/**', 'src/fonts/**', 'src/data/**'], ['copy']);
 	gulp.watch('src/js/*.js', ['scripts-watch']);

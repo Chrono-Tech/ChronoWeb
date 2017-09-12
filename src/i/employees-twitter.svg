@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>5C9093FF-E83E-43C8-8640-5D23F024043D</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-23.9%" y="-15.2%" width="147.8%" height="147.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.462745098   0 0 0 0 0.560784314   0 0 0 0 1  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Team-Desktop" transform="translate(-1006.000000, -1871.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <g id="Group-19" transform="translate(80.000000, 1791.000000)">
+                <g id="Group-5" transform="translate(576.000000, 0.000000)">
+                    <g id="Group-4-Copy-3" transform="translate(288.000000, 0.000000)">
+                        <g id="ava-team" filter="url(#filter-1)">
+                            <g id="icns-soc" transform="translate(26.000000, 80.000000)">
+                                <g id="twitter-circle" transform="translate(36.000000, 0.000000)">
+                                    <path d="M18.852,8.796 C19.428,8.316 20.1,7.74 20.4,7.104 C19.908,7.356 19.32,7.512 18.672,7.596 C19.272,7.164 19.764,6.6 20.016,5.832 C19.392,6.168 18.756,6.456 17.964,6.6 C16.104,4.356 11.652,6.18 12.444,9.54 C9.312,9.348 7.404,7.932 5.82,6.192 C4.92,7.656 5.7,9.876 6.768,10.488 C6.216,10.452 5.796,10.284 5.4,10.092 C5.448,11.94 6.468,12.828 7.896,13.308 C7.464,13.392 6.984,13.416 6.528,13.344 C6.972,14.628 7.896,15.432 9.48,15.6 C8.4,16.512 6.408,17.148 4.8,16.896 C6.18,17.772 7.752,18.468 9.936,18.372 C15.228,18.132 18.768,14.34 18.852,8.796 L18.852,8.796 Z M12,5.32907052e-16 C15.1825979,2.66453526e-16 18.2348448,1.26428208 20.4852814,3.51471863 C22.7357179,5.76515517 24,8.81740212 24,12 C24,18.627417 18.627417,24 12,24 C8.81740212,24 5.76515517,22.7357179 3.51471863,20.4852814 C1.26428208,18.2348448 2.66453526e-16,15.1825979 0,12 C-1.59872116e-15,8.81740212 1.26428208,5.76515517 3.51471863,3.51471863 C5.76515517,1.26428208 8.81740212,5.32907052e-16 12,0 L12,5.32907052e-16 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
