@@ -106,6 +106,10 @@
       box-shadow: 0 4px 8px 0 rgba(118, 143, 255, 0.2), 0 -1px 0 0 #f7f9ff
 
       &.show
+
+        .help__question_name::after
+          transform: rotate(180deg)
+
         .help__question_answer
 
           transition: all $fast ease-in
@@ -117,6 +121,21 @@
         color: #0039cb
         cursor: pointer
         padding: 10px 24px
+        position: relative
+
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          right: 24px
+          top: 50%
+          margin-top: -4px
+          width: 12px
+          height: 8px
+          background: url('../i/chevron.svg') no-repeat center
+          background-size: contain
+          transition: transform $fast
+
 
       &_answer
         transition: all $fast ease-out
