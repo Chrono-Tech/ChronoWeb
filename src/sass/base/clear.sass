@@ -1,0 +1,225 @@
+body, html, p, ul, ol, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, form, fieldset, td, th, caption, address, textarea, legend, blockquote
+  margin: 0
+  padding: 0
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, iframe, form, output, main
+  display: block
+
+a:active, a:focus
+  outline: none
+  -moz-outline-style: none
+
+body
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  //-webkit-font-smoothing: subpixel-antialiased !important
+  //-moz-osx-font-smoothing: auto
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility:    visible
+  -ms-backface-visibility:     hidden
+
+select
+  outline: 0
+  border: 0
+  margin: 0
+
+select:-moz-focusring
+  outline: none
+  color: transparent
+  text-shadow: 0 0 0 #555
+
+textarea
+  border: 0
+  margin: 0
+  overflow: auto
+  height: auto
+  padding: 8px 10px
+
+button
+  border: 0
+  outline: 0
+  padding: 0
+  line-height: normal
+
+fieldset, img
+  border: 0
+
+th,
+td
+  vertical-align: top
+
+form
+  border: 0
+  outline: 0
+
+label
+  margin: 0
+  padding: 0
+  display: block
+  color: #555
+  vertical-align: middle
+
+fieldset
+  padding: 0
+  margin: 0
+  border: 0
+
+label, input, button, select, textarea
+  font-size: 14px
+  font-weight: normal
+
+input,
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="number"]
+  border: 0
+  padding: 0
+  margin: 0
+  line-height: normal
+
+input[type="file"],
+input[type="image"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="radio"],
+input[type="checkbox"]
+  width: auto
+
+input:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="number"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus,
+textarea:focus,
+button:focus,
+button:active
+  outline: 0
+
+input[type="submit"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+button::-moz-focus-inner
+  border: 0
+
+button[disabled],
+button[disabled="disabled"],
+button:disabled,
+input[type="button"][disabled],
+input[type="button"][disabled="disabled"],
+input[type="button"]:disabled,
+input[type="submit"][disabled],
+input[type="submit"][disabled="disabled"],
+input[type="submit"]:disabled
+  opacity: .3
+  cursor: default
+
+input[type="text"]::-ms-clear
+  display: none
+
+input[type="password"]::-ms-reveal
+  display: none
+
+input,
+input[type="text"],
+input[type="number"],
+input[type="password"]
+  -webkit-user-modify: read-write-plaintext-only
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+
+img
+  width: auto
+  height: auto
+  max-width: 100%
+  vertical-align: middle
+  border: 0
+  -ms-interpolation-mode: bicubic
+
+/*
+  image-rendering: -moz-crisp-edges       // Firefox
+  image-rendering:   -o-crisp-edges         // Opera
+  image-rendering: -webkit-optimize-contrast // Webkit (non-standard naming)
+  image-rendering: crisp-edges
+  -ms-interpolation-mode: nearest-neighbor  // IE (non-standard property)
+  */
+
+//
+//input,
+//input:focus
+//  box-shadow: none !important
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]
+  cursor: pointer
+  -webkit-appearance: button
+
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"]
+  cursor: pointer
+
+select,
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"]
+  color: #555
+  vertical-align: middle
+
+table
+  max-width: 100%
+  background-color: transparent
+  border-collapse: collapse
+  border-spacing: 0
+
+
+html,
+body
+  //font-family: sans-serif
+  //font-size: 10pt !important
+  height: 100%
+  background-color: white
+
+ul, ol
+  list-style: none
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"]
+  -webkit-appearance: none
+
+p, span //font-boosting fix
+  max-height: 1000000px
+
+.clearfix:after
+  display: table
+  content: ""
+  clear: both

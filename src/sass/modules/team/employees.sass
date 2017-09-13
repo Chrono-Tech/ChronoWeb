@@ -1,0 +1,131 @@
+.employees
+  background: white
+
+@include media(desktop)
+
+  .employees
+    padding: 64px 0
+
+    &__text
+      width: 50%
+      text-align: left
+      float: left
+
+    &__title
+      font-size: 2.4rem
+      font-weight: bold
+      color: #00005f
+      margin-bottom: 24px
+
+    &__descr
+      font-size: 1.6rem
+      line-height: 1.5
+      color: #66669f
+
+      p
+        margin-bottom: 15px
+
+        &:last-of-type
+          margin: 0
+
+    &__i
+      width: 24px
+      height: 24px
+
+      &.employees-mail
+        background: no-repeat center url('../i/svg/employees-mail.svg')
+        background-size: contain
+
+      &.employees-facebook
+        background: no-repeat center url('../i/svg/employees-facebook.svg')
+        background-size: contain
+
+      &.employees-twitter
+        background: no-repeat center url('../i/svg/employees-twitter.svg')
+        background-size: contain
+
+      &.employees-telegram
+        background: no-repeat center url('../i/svg/employees-telegram.svg')
+        background-size: contain
+
+    &__list
+      display: flex
+      flex-wrap: wrap
+      list-style: none
+      justify-content: space-between
+
+    &__human
+      text-align: left
+      display: inline-block
+      vertical-align: top
+      margin: 0 52px 56px
+
+      &:nth-child(4n-1)
+        margin-right: 0
+
+      &:nth-child(4n)
+        margin-left: 0
+
+      &_face
+        border-radius: 50%
+        width: 184px
+        height: 184px
+        background: no-repeat center grey
+        transition: all $fast
+        position: relative
+        margin-bottom: 24px
+        overflow: hidden
+        z-index: 0
+
+        &:hover
+          box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+
+          .employees__human_contacts
+            opacity: 0.8
+
+      &_contacts
+        display: flex
+        position: absolute
+        background-color: #768fff
+        justify-content: center
+        align-items: center
+        transition: all $fast
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        opacity: 0
+
+        a
+          display: inline-block
+          background-color: white
+          margin: 0 6px
+          border-radius: 50%
+
+      &_name
+        font-size: 2.4rem
+        font-weight: 300
+        color: #00005f
+
+      &_position
+        font-size: 1.4rem
+        color: #0039cb
+        margin-bottom: 24px
+        text-transform: uppercase
+
+      &_bio-link
+        display: block
+        font-size: 1.4rem
+        color: #2962ff
+        cursor: pointer
+        background: transparent
+
+        &:hover
+          text-decoration: underline
+
+        &_arrow
+          width: 14px
+          height: 6px
+
+      &_bio
+        display: none

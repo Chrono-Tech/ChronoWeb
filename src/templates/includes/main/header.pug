@@ -1,0 +1,88 @@
+.header__video-container
+  .header__video-close
+  .header__video-block
+    //- <iframe width="560" height="315" src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/Xp3u6G1VIjY" frameborder="0" allowfullscreen></iframe>
+header.header.js-first-slide(style={opacity: '1'})
+  .wrap
+    .header__logo
+      +svg('header__logo-i', 'logo-chronobank')
+      | #[span.footer__logo-color Chrono]bank.io
+    a.header__news(href="#")
+      .header__label new
+      b Jun 4
+      | | How I rediscovered my love for JavaScript after throwing 90% of it in the trash.
+    .nav
+      .nav__icon
+        img(src="i/menu.png" srcset="i/@2x/menu.png 2x")
+      .nav__block
+        img(src="i/logo.png" srcset="i/@2x/logo.png 2x").nav__logo
+        .nav__close.js-close-menu
+        ul.nav__list
+          li.nav__item.nav__item_hover.nav__item_expand
+            a(href="#").nav__item.nav__item_label Products
+            ul.nav__products
+              li
+                a(href="#")
+                  img(src="i/nav_logo1.png" srcset="i/@2x/nav_logo1.png 2x").nav__products-logo
+                  .nav__products-name ChronoMint
+                  .nav__products-descr Our product helps people lorem ipsum subtitle
+              li
+                a(href="#")
+                  img(src="i/nav_logo2.png" srcset="i/@2x/nav_logo2.png 2x").nav__products-logo
+                  .nav__products-name LaborX
+                  .nav__products-descr Our product helps people lorem ipsum subtitle
+          li.nav__item.nav__item_hover
+            a(href="/team.html" target="_blank").nav__item.nav__item_label.js-close-menu Team
+          li.nav__item.nav__item_hover
+            a(href="/faq.html" target="_blank").nav__item.nav__item_label.js-close-menu FAQ
+          li.nav__item.nav__item_hover
+            a(href="https://medium.com/@Chronobank" target="_blank").nav__item.nav__item_label.js-close-menu Blog
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__item_label.js-close-menu Contacts
+          li.nav__item.nav__item_hover
+            a(href="#").nav__item.nav__login.nav__item_label.js-close-menu
+              +svg('nav__login-i', 'login')
+              | Login
+          li.nav__lang
+            a(href="#").nav__lang-current.js-nav-sec Eng
+            ul.nav__lang-list
+              li
+                a(href="#").current
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+              li
+                a(href="#")
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+              li
+                a(href="#")
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+                a(href="#")
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+              li
+                a(href="#")
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+              li
+                a(href="#")
+                  +svg('nav__lang-i', 'menu')
+                  | Rus
+    .header__block
+      h1.header__title
+        strong.header__title_main
+          | Blockchain revolution
+        | for the recruitment industry
+      span.header__video.js-video
+        +svg('header__i', 'video')
+        span.header__video_label
+          | Watch the Introduction
+  .widjet
+    .widjet__inner
+      -for (var i = 0; i < 5; i++)
+        .widjet__block
+          .widjet__logo
+            img(src="uploads/widjet/bittrex.png" srcset="uploads/widjet/@2x/bittrex.png 2x")
+          .widjet__wrap.js-widjet(data-url="data/test.json")

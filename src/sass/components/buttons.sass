@@ -1,7 +1,10 @@
 .buttons__container
   display: flex
 
-.button
+input.button,
+button.button,
+a.button
+  @extend .button_fake
   position: relative
   overflow: hidden
   text-align: center
@@ -11,34 +14,36 @@
   box-sizing: border-box
   display: block
   min-width: 107px
+  font-weight: 500
   padding: 10px 15px 9px
   cursor: pointer
-  text-decoration: none
   border-radius: 2px
   background-color: $blue
   text-transform: uppercase
-  transition: all $fast
-  font-family: $main
+  font-family: $clearsans
   border: 0
-  box-shadow: 0 2px 2px rgba(0, 0, 0, .3)
-  transition: all $fast
-  z-index: 40
-
-  &:hover
-    background-color: #618afa
-    // box-shadow: 0 8px 16px rgba(0, 0, 0, .3)
+  z-index: 1
 
   &_sec
     @extend .button
     background-color: $white
     color: $blue
 
+  &_fake
+    text-decoration: none
+    transition: all $fast
+    box-shadow: 0 2px 2px 0 rgba(118, 143, 255, 0.24), 0 0 2px 0 rgba(118, 143, 255, 0.12)
+
     &:hover
-      background-color: #ebebeb
+      box-shadow: 0 8px 8px 0 rgba(118, 143, 255, 0.24), 0 0 8px 0 rgba(118, 143, 255, 0.12)
+
+
 
   &__container
     display: flex
     justify-content: flex-end
+
+
 
 .button
   input

@@ -1,0 +1,43 @@
+.modal
+  box-sizing: border-box
+  overflow-x: hidden
+  overflow-y: auto
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 2
+  height: 0
+  opacity: 0
+  -webkit-overflow-scrolling: touch
+  transition: all .5s ease
+  background-color: rgba(0, 0, 0, .8)
+  text-align: center
+
+  &.show
+    opacity: 1
+    height: auto
+
+  &__dialog
+    position: relative
+    transform: translate(0)
+    transition: transform .3s ease-out
+    margin: 45px auto
+
+    &__close
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 0
+      right: -40px
+      cursor: pointer
+
+      &__cross
+        max-width: 100%
+        max-height: 100%
+
+    &__describe
+      font-weight: 200
+      color: #20262c
+      text-align: left

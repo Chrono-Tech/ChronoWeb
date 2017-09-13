@@ -1,0 +1,99 @@
+.app
+  .app__container.desktop
+    .wrap
+      h2.app__title
+        img(src="i/logo1.png" srcset="i/@2x/logo1.png").app__logo
+        | ChronoMint
+      .app__content
+        .app__aside
+          img(src="i/chronomint.png" srcset="i/@2x/chronomint.png 2x").app__pic
+        .app__text
+          h3.app__title-sec ChronoMint — the interface for ChronoBank
+          p.app__descr ChronoMint is the interface for ChronoBank’s smart contract management system. It can be used for the following operations and functions:
+          ul.app__list
+            li
+              +svg('app__i', 'list')
+              p.
+                #[strong Manage ETH and any ERC20 tokens] (not just TIME and LH), including secure multi-signature support when using hardware key storage.
+            li
+              +svg('app__i', 'list')
+              p.
+                #[strong Manage BTC, LTC] and a number of other popular cryptocurrencies (coming soon).
+            li
+              +svg('app__i', 'list')
+              p #[strong Create your own ERC20 token], with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
+            li
+              +svg('app__i', 'list')
+              p #[strong Distributed cryptocurrency market] on top of 0x protocol (coming soon).
+            li
+              +svg('app__i', 'list')
+              p #[strong Voting function:] TIME token holders will be able to vote on important company decisions.
+            li
+              +svg('app__i', 'list')
+              p #[strong Collection of rewards] (long-term holders can place their TIME tokens on a deposit contract balance and receive fees from LH and LaborX operations).
+            li
+              +svg('app__i', 'list')
+              p #[strong LOC Management] (Chronobank Manager Only).
+            li
+              +svg('app__i', 'list')
+              p #[strong LH token issuance] (Chronobank Manager Only).
+        nav.app__links
+          h4.app__links_title Downloads
+          a(href="#").app__link.button_fake
+            +svg('app__i-desktop', 'download-macos')
+          a(href="#").app__link.button_fake
+            +svg('app__i-desktop', 'download-windows')
+  .app__container.dark.mobile
+    .wrap
+      .app__content
+        .app__aside
+          img(src="i/phone.jpg" srcset="i/@2x/phone.jpg").app__pic
+        .app__text
+          h3.app__title-sec ChronoMint — the interface for ChronoBank
+          p.app__descr ChronoMint is the interface for ChronoBank’s smart contract management system. It can be used for the following operations and functions:
+          ul.app__list
+            li
+              +svg('app__i', 'list')
+              p #[strong Manage ETH and any ERC20 tokens] (not just TIME and LH), including secure multi-signature support when using hardware key storage.
+            li
+              +svg('app__i', 'list')
+              p #[strong Manage BTC, LTC] and a number of other popular cryptocurrencies (coming soon).
+            li
+              +svg('app__i', 'list')
+              p #[strong Create your own ERC20 token], with currency exchange for trading pairs (coming soon): Your ERC20 <> ETH.
+            li
+              +svg('app__i', 'list')
+              p #[strong Distributed cryptocurrency market] on top of 0x protocol (coming soon).
+        nav.app__links
+          h4.app__links_title Downloads
+          a(href="#").app__link.button_fake
+            +svg('app__i-mobile', 'app-store')
+          a(href="#").app__link.button_fake
+            img(src="i/svg/play-market.svg").app__i-mobile
+  .app__join
+    .wrap
+      .app__join_content
+        a(href="#").button_sec.slack
+          img(src="i/svg/slack-blue.svg").app__i-slack-small
+          span Join our Slack
+        p Get in touch with our team!
+        a(href="#").button.telegram
+          img(src="i/svg/telegram-white.svg").app__i-telegram-small
+          span Join our Telegram
+        img(src="i/svg/slack-big.svg").app__i-slack-big
+        img(src="i/svg/telegram-big.svg").app__i-telegram-big
+  .app__container.laborx
+    .wrap
+      h2.app__title
+        img(src="i/logo2.png" srcset="i/@2x/logo2.png").app__logo
+        | LaborX
+      .app__content
+        .app__aside.app__aside_revert
+          img(src="i/laborx.png" srcset="i/@2x/laborx.png 2x").app__pic
+        .app__text
+          h3.app__title-sec LaborX — decentralised marketplace
+          .app__info
+            p LaborX is ChronoBank’s flagship platform for workers and clients: a place where employers can list jobs and freelancers can find employment from anywhere in the world, 24/7.
+            p It functions without any closures or outages, meaning work can be secured even at nights or on the weekends. LaborX’s reputation system will make the hiring process for every job fair. Every newcomer receives a neutral rating, which will change subject to feedback from the hiring counterparty. A net positive rating will enable workers to access better-paid jobs, whilst a negative rating will cause workers to drop down the ranks, and receive only offers for lower-paid work.
+            p For workers, delayed payment for a completed job becomes a thing of the past, because payment terms are registered in a smart contract from the outset. They can even be processed on a per-second basis.
+            p Another great feature for employers is the low commission fees - just 1% of a job’s overall pay. The difference between traditional hiring costs and LaborX’s hiring cost can be spent on improving working conditions or on pay bonuses.

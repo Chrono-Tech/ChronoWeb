@@ -1,0 +1,84 @@
+.news
+  padding: 82px 0 0
+  position: relative
+  z-index: 5
+
+  &__preloader
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    height: 100px
+    width: 100%
+
+  &__container
+    padding-top: 24px
+
+  &__block
+    display: block
+    padding: 24px 0
+    color: $black
+    border-radius: 2px
+
+    &_title
+      font-size: 1.6rem
+      line-height: 1.8rem
+      font-weight: normal
+      margin-bottom: 12px
+
+    &_descr
+      font-size: 1.4rem
+      line-height: 1.7rem
+
+  &__pic
+    display: block
+    background-repeat: no-repeat
+    background-position: 50% 50%
+    width: 100%
+    padding-top: 76.8%
+    background-size: cover
+    margin-bottom: 25px
+
+@include media(tablet)
+
+  .news
+
+    &__container
+      display: flex
+      flex-wrap: wrap
+      align-items: stretch
+
+    &__block
+      width: 50%
+      box-sizing: border-box
+      padding: 24px
+      transition: all $fast
+
+@include media(desktop)
+
+  .news
+    padding-top: 107px
+    padding-bottom: 61px
+
+    &__title
+      font-size: 48px
+      font-weight: 500
+      text-align: center
+      color: #00005f
+
+    &__container
+      padding-top: 58px
+
+    &__block
+
+      &_title
+        font-size: 2.4rem
+        line-height: 3.2rem
+        font-weight: bold
+        margin-bottom: 19px
+
+      &_descr
+        font-size: 1.8rem
+        line-height: 2.2rem
+
+      &:hover
+        box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)

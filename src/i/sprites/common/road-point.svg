@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="32px" viewBox="0 0 23 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>874DFAFA-B57B-4668-BB6B-F97D131531E4</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-22.4%" y="-45.2%" width="144.9%" height="241.9%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.462745098   0 0 0 0 0.560784314   0 0 0 0 1  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-2-ver.2" transform="translate(-565.000000, -6937.000000)" fill-rule="nonzero" fill="#768FFF">
+            <g id="bottom" transform="translate(0.000000, 6137.000000)">
+                <g id="Roadmap">
+                    <g id="Group-46" transform="translate(0.000000, 683.000000)">
+                        <g id="Img-title" filter="url(#filter-1)" transform="translate(542.000000, 102.000000)">
+                            <g id="map-marker" transform="translate(24.000000, 15.000000)">
+                                <path d="M11,15.2 C8.83030991,15.2 7.07142857,13.409139 7.07142857,11.2 C7.07142857,10.139134 7.48533044,9.12171839 8.2220805,8.37157288 C8.95883056,7.62142736 9.95807808,7.2 11,7.2 C13.1696901,7.2 14.9285714,8.990861 14.9285714,11.2 C14.9285714,12.260866 14.5146696,13.2782816 13.7779195,14.0284271 C13.0411694,14.7785726 12.0419219,15.2 11,15.2 L11,15.2 Z M11,1.42108547e-15 C4.92486775,-7.10542736e-16 5.07530526e-16,5.0144108 -8.8817842e-16,11.2 C5.07530526e-16,19.6 11,32 11,32 C11,32 22,19.6 22,11.2 C22,5.0144108 17.0751322,2.13162821e-15 11,1.42108547e-15 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

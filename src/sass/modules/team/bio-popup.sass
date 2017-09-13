@@ -1,0 +1,68 @@
+.modal
+  box-sizing: border-box
+  overflow-x: hidden
+  overflow-y: auto
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 2
+  height: 0
+  opacity: 0
+  -webkit-overflow-scrolling: touch
+  transition: all .5s ease
+  background-color: rgba(0, 0, 0, .8)
+  text-align: center
+
+  &.show
+    opacity: 1
+    height: auto
+
+  &__dialog
+    display: inline-block
+    position: relative
+    transform: translate(0)
+    transition: transform .3s ease-out
+    margin: 45px auto
+    background-color: white
+
+    &__close
+      width: 30px
+      height: 30px
+      position: absolute
+      top: 0
+      right: -40px
+      cursor: pointer
+
+      &__cross
+        max-width: 100%
+        max-height: 100%
+
+    &__content
+      padding: 24px 64px
+      width: 672px
+      min-height: 672px
+      box-sizing: border-box
+      text-align: left
+
+      &_title
+        font-size: 2.4rem
+        font-weight: 300
+        color: #00005f
+
+      &_time
+        font-size: 2.4rem
+        font-weight: bold
+        color: #00005f
+
+      &_describe
+        font-size: 1.4rem
+        color: #66669f
+        margin-bottom: 60px
+
+    &__form
+      width: 60%
+
+      textarea
+        padding-top: 40px

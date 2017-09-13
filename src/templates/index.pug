@@ -1,13 +1,15 @@
 extends includes/body.pug
 
 block body
-  include includes/header.pug
-  include includes/about.pug
-  include includes/app.pug
-  include includes/ceo.pug
-  include includes/partners.pug
-  include includes/press.pug
-  include includes/news.pug
-  include includes/contacts.pug
-  include includes/footer.pug
-  
+	.page.js-wrap.main
+		include includes/main/header
+		include includes/main/about
+		include includes/main/app
+		include includes/main/roadmap
+		include includes/main/ceo
+		include includes/main/partners
+		include includes/main/press
+		include includes/main/news
+		include includes/main/contacts
+		include includes/footer.pug
+

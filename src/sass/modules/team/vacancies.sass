@@ -1,0 +1,44 @@
+.vacancies
+  background-color: #f7f9ff
+
+@include media(desktop)
+
+  .vacancies
+    padding: 64px 0 105px
+
+    &__title
+      font-size: 4.8rem
+      text-align: center
+      font-weight: 500
+      margin-bottom: 64px
+
+    &__list
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      list-style: none
+
+    &__vacancy
+      width: 256px
+      text-align: left
+
+      &_title
+        font-size: 1.8rem
+        font-weight: bold
+        color: #00005f
+        margin-bottom: 16px
+
+      &_describe
+        font-size: 16px
+        line-height: 1.5
+        color: #66669f
+        margin-bottom: 24px
+
+        p
+          margin-bottom: 10px
+
+          &:last-child
+            margin-bottom: 0
+
+      .button
+        display: inline-block

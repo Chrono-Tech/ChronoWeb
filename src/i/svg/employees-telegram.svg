@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>F0CC0063-E793-4313-8F95-946D7E07A4CD</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-23.9%" y="-15.2%" width="147.8%" height="147.8%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="16" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.462745098   0 0 0 0 0.560784314   0 0 0 0 1  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Team-Desktop" transform="translate(-1078.000000, -1871.000000)" fill="#FFFFFF">
+            <g id="Group-19" transform="translate(80.000000, 1791.000000)">
+                <g id="Group-5" transform="translate(576.000000, 0.000000)">
+                    <g id="Group-4-Copy-3" transform="translate(288.000000, 0.000000)">
+                        <g id="ava-team" filter="url(#filter-1)">
+                            <g id="icns-soc" transform="translate(26.000000, 80.000000)">
+                                <g id="telegram" transform="translate(108.000000, 0.000000)">
+                                    <path d="M12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 Z M9.06673738,17.4329185 C9.43357949,17.4329185 9.60357949,17.2666685 9.80936896,17.0654185 L11.5898953,15.3766685 L15.2941058,18.0541685 C15.9741058,18.4216685 16.4662111,18.2291685 16.6362111,17.4329185 L19.0698953,6.22416847 C19.3204216,5.24416847 18.6941058,4.79791847 18.0409479,5.08666847 L3.75200054,10.4766685 C2.77673738,10.8616685 2.78568475,11.3954185 3.57305317,11.6141685 L7.24147423,12.7516685 L15.7235795,7.51041847 C16.1262111,7.27416847 16.4930532,7.40541847 16.1888426,7.67666847 L9.3172637,13.7316685 L9.06673738,17.4329185 Z" id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

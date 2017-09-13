@@ -67,9 +67,9 @@
     font-size: 1.6rem
     text-transform: uppercase
     color: $white
-    opacity: .6
+    opacity: 0.5
+    font-weight: 500
     margin-bottom: 10px
-    font-weight: normal
 
   &__logo-block
     margin-bottom: 18px
@@ -122,7 +122,7 @@
     font-weight: 300
 
     a
-      font-weight: 400
+      font-weight: bold
       color: #768FFF
 
       &:hover
@@ -175,7 +175,7 @@
     .field__block
       padding-top: 15px
 
-@media ($tablet)
+@include media(tablet)
 
   .footer
 
@@ -197,14 +197,15 @@
       width: 70%
 
 
-@media ($desktop)
+@include media(desktop)
 
   .footer
     background: linear-gradient(-125deg, #644EBF, #262448)
-    padding-top: 42px
+    padding-top: 40px
+    padding-bottom: 30px
 
     &__scrolltop
-      right: 50px
+      right: 80px
 
     &__subscribe
       margin-top: 32px
@@ -219,10 +220,10 @@
     &__block
 
       &_logo
-        width: 30%
+        width: 385px
 
       &_nav
-        width: 20%
+        width: 17%
         padding-top: 4px
 
       &_contacts
@@ -230,14 +231,46 @@
         margin-bottom: 0
         padding-top: 4px
 
+        .footer__title
+          margin-bottom: 11px
+
       &_social
         display: none
 
+      &_downloads
+        text-align: left
+
+        a
+          display: block
+          margin-bottom: 24px
+
+          &:hover
+
+            span
+              text-decoration: underline
+
+          .footer__i
+            display: inline-block
+            vertical-align: middle
+
+          span
+            display: inline-block
+            vertical-align: middle
+            margin-left: 24px
+            font-size: 1.6rem
+            color: #768fff
+
     &__copy
-      width: 250px
+      font-size: 12px
+      font-weight: 300
+      position: relative
+      top: -17px
 
     &__section
-      width: 25%
+      width: 24%
+
+      .footer__subscribe
+        width: 100%
 
       .footer__block_social
         display: block
@@ -248,12 +281,13 @@
       margin-top: 30px
 
     &__contacts
-      margin-bottom: 38px
+      margin-bottom: 41px
       font-size: 1.6rem
-      line-height: 2rem
+      line-height: 2.1rem
 
       dd
-        margin-bottom: 13px
+        margin-bottom: 10px
+        font-weight: bold
 
     &__download
       display: block
@@ -263,11 +297,13 @@
 
       li
         margin-bottom: 24px
+        font-weight: bold
 
         &:last-child
           margin-bottom: 0
 
       a
+        font-weight: normal
         color: #768FFF
 
         &:hover
@@ -279,3 +315,9 @@
 
       a
         margin-bottom: 13px
+
+    .button__container
+      text-align: right
+
+      input
+        display: inline-block

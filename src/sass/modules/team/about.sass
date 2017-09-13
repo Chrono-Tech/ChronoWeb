@@ -1,0 +1,102 @@
+.about
+  padding: 64px 0 0
+  background-color: #f7f9ff
+
+  &__i
+    display: block
+
+@include media(desktop)
+
+  .about
+    padding-top: 67px
+
+    &__title
+      font-size: 4.8rem
+      text-align: center
+      font-weight: 500
+      margin-bottom: 18px
+
+    &__facts-list
+      list-style: none
+      text-align: center
+
+    &__pic
+      line-height: normal
+      display: inline-flex
+      justify-content: center
+      align-items: center
+      padding: 12px
+      box-sizing: border-box
+      border-radius: 50%
+      background-color: #f7f9ff
+      box-shadow: 0 4px 8px 0 rgba(100, 78, 191, 0.2)
+      margin-bottom: 24px
+      width: 96px
+      height: 96px
+
+    &__fact
+      width: 200px
+      display: inline-block
+      vertical-align: top
+      margin: 0 44px
+
+      &:nth-child(4n-4)
+        margin-left: 0
+
+      &:nth-child(4n-1)
+        margin-right: 0
+
+      &:nth-child(1)
+        margin-left: 56px
+
+        .about__i
+          width: 54px
+          height: 72px
+
+      &:nth-child(2)
+
+        .about__i
+          width: 58px
+          height: 39px
+
+      &:nth-child(3)
+        margin-right: 56px
+
+        .about__i
+          width: 73px
+          height: 41px
+
+      &:nth-child(4)
+
+        .about__i
+          width: 48px
+          height: 66px
+
+      &:nth-child(5)
+
+        .about__i
+          width: 34px
+          height: 45px
+
+      &:nth-child(6)
+
+        .about__i
+          width: 58px
+          height: 44px
+
+      &:nth-child(7)
+
+        .about__i
+          width: 50px
+          height: 38px
+
+      &_text
+        margin-bottom: 16px
+        font-size: 1.6rem
+        color: #66669f
+
+        &-main
+          font-weight: bold
+          font-size: 1.8rem
+          display: block
+          color: #00005f

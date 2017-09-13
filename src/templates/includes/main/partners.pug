@@ -1,0 +1,12 @@
+.partners
+  .wrap
+    h3.partners__title Partners
+    p.partners__descr We are proud of our partners
+    .partners__container
+      .partners__content
+        - for (var i = 0; i < 6; i++)
+          a(href="#").partners__block
+            .partners__logo-box
+              img.partners__logo(src="uploads/partners/logo1.png" srcset="uploads/partners/@2x/logo1.png 2x" alt="ICOpromo")
+            h4.partners__name ICOpromo
+            p.partners__info We have taken great care to design the system for ease of use, to make sure that actual labour time and the LH token can be exchanged efficiently for each other.
