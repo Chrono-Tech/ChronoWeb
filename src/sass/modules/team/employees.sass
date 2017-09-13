@@ -1,7 +1,7 @@
 .employees
   background: white
 
-@media ($desktop)
+@include media(desktop)
 
   .employees
     padding: 64px 0
@@ -33,19 +33,19 @@
       height: 24px
 
       &.employees-mail
-        background: no-repeat center url('../i/employees-mail.svg')
+        background: no-repeat center url('../i/svg/employees-mail.svg')
         background-size: contain
 
       &.employees-facebook
-        background: no-repeat center url('../i/employees-facebook.svg')
+        background: no-repeat center url('../i/svg/employees-facebook.svg')
         background-size: contain
 
       &.employees-twitter
-        background: no-repeat center url('../i/employees-twitter.svg')
+        background: no-repeat center url('../i/svg/employees-twitter.svg')
         background-size: contain
 
       &.employees-telegram
-        background: no-repeat center url('../i/employees-telegram.svg')
+        background: no-repeat center url('../i/svg/employees-telegram.svg')
         background-size: contain
 
     &__list

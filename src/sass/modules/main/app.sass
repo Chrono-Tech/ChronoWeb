@@ -1,5 +1,152 @@
 .app
 
+  &__container
+    padding-top: 33px
+
+    &.dark
+      background: #f7f9ff
+
+      .app__links
+        background-color: white
+
+    &.mobile
+      padding-top: 86px
+
+      .app__list
+        display: none
+
+      .app__descr
+        display: none
+
+      .app__text
+        order: -1
+        text-align: center
+
+      .app__title-sec
+        margin: 0
+
+      .app__pic
+        margin: 32px auto
+        width: 270px
+        height: 550px
+        border-radius: 45px
+
+    &.laborx
+      margin-bottom: 40px
+
+  &__content
+    display: flex
+    flex-direction: column
+
+  &__logo
+    width: 64px
+    height: 64px
+    border-radius: 15px
+    display: block
+    position: absolute
+    left: 50%
+    top: 0
+    transform: translate(-50%, 0)
+
+  &__title
+    position: relative
+    padding-top: 72px
+    font-size: 2.6rem
+    line-height: normal
+    margin-bottom: 32px
+    text-align: center
+    font-weight: 500
+
+    &-sec
+      font-size: 1.8rem
+      line-height: normal
+      font-weight: bold
+      margin-bottom: 16px
+
+  &__descr
+    font-size: 1.4rem
+    line-height: 1.5
+    color: #66669f
+    margin-bottom: 16px
+
+  &__aside
+    margin: 0 -16px
+    padding-bottom: 8px
+
+  &__list
+    list-style: none
+
+    li
+      padding: 0 0 21px 40px
+      position: relative
+      font-size: 1.4rem
+      line-height: 2.1rem
+
+  &__pic
+    display: block
+    box-shadow: 0 16px 24px rgba(0,0,0,.24)
+    margin-bottom: 50px
+
+  &__links
+    margin-bottom: -24px
+    border-radius: 2px
+    background-color: #f7f9ff
+    text-align: center
+    padding: 24px
+    box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+
+    &_title
+      font-size: 1.6rem
+      font-weight: bold
+
+  &__link
+    margin: 26px auto 0
+    display: inline-block
+    vertical-align: middle
+
+  &__join
+    margin-bottom: 32px
+    margin-top: 124px
+
+    &_content
+      background-image: linear-gradient(to top, #644ebf, #262448)
+      color: $white
+      padding: 130px 16px
+      border-radius: 2px
+      position: relative
+      z-index: 0
+      overflow: hidden
+      box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
+      display: flex
+      align-items: center
+      justify-content: center
+      flex-direction: column
+
+      a
+
+        &:first-of-type
+          margin-bottom: 32px
+
+        span
+          vertical-align: middle
+          display: inline-block
+
+      p
+        text-align: center
+        font-weight: 300
+        font-size: 3.6rem
+        margin-bottom: 20px
+        order: -1
+        position: relative
+        z-index: 1
+
+  &__info
+    font-size: 1.4rem
+    line-height: 2.4rem
+
+    & > p
+      margin-bottom: 24px
+
   &__i
     position: absolute
     left: 0
@@ -20,14 +167,14 @@
     &-slack-big
       position: absolute
       z-index: 0
-      left: -21px
-      top: -6px
+      left: -72px
+      top: -24px
 
     &-telegram-big
       position: absolute
       z-index: 0
       right: -21px
-      top: -6px
+      bottom: -26px
 
     &-slack-small
       width: 14px
@@ -43,123 +190,7 @@
       display: inline-block
       vertical-align: middle
 
-  &__container
-    padding-top: 33px
-
-    &.mobile
-      background-color: #f7f9ff
-      margin: 0 -16px 86px
-      padding-left: 16px
-      padding-right: 16px
-
-    &.laborx
-      margin-bottom: 40px
-
-  &__title
-    position: relative
-    padding-top: 72px
-    font-size: 2.7rem
-    line-height: 3.3rem
-    font-weight: normal
-    margin-bottom: 32px
-    text-align: center
-    font-weight: 300
-
-    &-sec
-      font-size: 1.6rem
-      line-height: 1.8rem
-      font-weight: normal
-      margin-bottom: 16px
-
-  &__content
-    display: flex
-    flex-direction: column
-
-    &.reverse
-      flex-direction: column-reverse
-
-  &__list
-    list-style: none
-
-    li
-      padding: 0 0 21px 40px
-      position: relative
-      font-size: 1.4rem
-      line-height: 2.1rem
-
-  &__logo
-    width: 64px
-    height: 64px
-    border-radius: 15px
-    display: block
-    position: absolute
-    left: 50%
-    top: 0
-    transform: translate(-50%, 0)
-
-  &__aside
-    margin: 0 -16px
-    padding-bottom: 8px
-
-    &-title
-      font-size: 1.6rem
-      line-height: 2rem
-      color: $blue
-      margin: 0 12px 32px
-      text-align: center
-      font-weight: 300
-      position: relative
-      z-index: 5
-
-  &__pic
-    display: block
-    box-shadow: 0 16px 24px rgba(0,0,0,.24)
-    margin-bottom: 50px
-
-  &__phone
-    margin: 0 auto
-    width: 270px
-    height: 550px
-    display: block
-    border-radius: 45px
-
-  &__hidden
-    display: none
-
-  &__links
-    margin-bottom: -24px
-
-  &__link
-    display: block
-    margin: 26px auto 0
-
-  &__join
-    margin-bottom: 32px
-
-    &_content
-      background: no-repeat center, linear-gradient(to left, #644ebf, #262448)
-      color: $white
-      padding: 32px 16px
-      border-radius: 2px
-      box-shadow: 0 8px 16px rgba(0,0,0,.24)
-
-      & > p
-        font-size: 2.8rem
-        line-height: 3.4rem
-        margin-bottom: 40px
-
-
-  &__info
-    font-size: 1.4rem
-    line-height: 2.4rem
-
-    & > p
-      margin-bottom: 24px
-
-    & > b
-      color: #FFAB00
-
-@media ($tablet)
+@include media(tablet)
 
   .app
 
@@ -170,7 +201,6 @@
     &__list
 
       li
-        padding-bottom: 30px
         font-size: 1.6rem
         line-height: 2.4rem
         padding-bottom: 24px
@@ -204,127 +234,33 @@
       &_content
         padding: 30px 50px
 
-@media ($desktop)
+@include media(desktop)
 
   .app
 
-    &__title
-      font-size: 48px
-      font-weight: 500
-      padding-top: 76px
-      left: 7px
-
-      &-sec
-        font-weight: bold
-        line-height: 3.4rem
-        margin-bottom: 23px
-
-    &__logo
-      margin-left: -7px
-
-    &__descr
-      font-size: 1.6rem
-      line-height: 2.4rem
-      text-align: left
-      color: #66669f
-      margin-bottom: 11px
+    .wrap
+      position: relative
 
     &__content
       flex-direction: row
       position: relative
 
-    &__text
-      width: 30%
-      box-sizing: border-box
-      flex: 1 0 auto
+    &__logo
+      margin-left: -7px
 
-    &__pic
-      box-shadow: 0 16px 24px rgba(0,0,0,.24)
-      transform: rotate3d(0, 1, 0, -10deg) translate(-15px, 30px)
-      transition: all $fast
+    &__title
+      font-size: 4.8rem
+      padding-top: 76px
+      left: 7px
 
-    &__phone
-      position: relative
-      top: 77px
-      left: -8px
+      &-sec
+        line-height: 3.4rem
+        margin-bottom: 23px
 
-    &__container
-
-      .wrap
-        position: relative
-
-      .app__links
-        position: absolute
-        bottom: -16px
-        left: 480px
-        padding: 26px 17px 32px 24px
-
-        & a:first-of-type
-          margin-right: 25px
-
-      .app__link
-        margin-top: 11px
-
-      &.desktop
-
-        .app__content
-          padding-bottom: 53px
-
-        .app__text
-          padding-top: 56px
-
-        .app__aside
-          padding-top: 68px
-
-      &.mobile
-        padding-top: 32px
-
-        .app__aside
-          margin-bottom: -25px
-
-        .app__content
-          justify-content: space-between
-
-        .app__text
-          padding-top: 33px
-          padding-right: 110px
-          width: 50%
-
-        .app__links
-          bottom: -131px
-          background-color: white
-          padding-bottom: 30px
-
-        .app__link
-          margin-top: 14px
-
-      &.laborx
-        padding-bottom: 20px
-        margin-bottom: 0
-
-        .app__title
-          margin-bottom: 54px
-
-          &-sec
-            margin-bottom: 22px
-
-        .app__content
-          padding-top: 13px
-
-        .app__pic
-          top: -75px
-          right: auto
-          left: -50px
-
-        .app__aside
-          &-title
-            margin-bottom: 50px
-
-        .app__info
-
-          p
-            margin-bottom: 11px
-            line-height: 2.4rem
+    &__descr
+      font-size: 1.6rem
+      line-height: 2.4rem
+      margin-bottom: 11px
 
     &__aside
       width: 50%
@@ -349,11 +285,15 @@
         .app__pic
           transform: rotate3d(0, 1, 0, 10deg) translate(15px, 40px)
 
+    &__text
+      width: 30%
+      box-sizing: border-box
+      flex: 1 0 auto
+
     &__pic
-      right: -50px
-      top: -40px
-      position: relative
-      height: 618px
+      box-shadow: 0 16px 24px rgba(0,0,0,.24)
+      transform: rotate3d(0, 1, 0, -10deg) translate(-15px, 30px)
+      transition: all $fast
 
     &__list
 
@@ -370,23 +310,29 @@
             font-weight: normal
             color: #00005f
 
+    &__pic
+      right: -50px
+      top: -40px
+      position: relative
+      height: 618px
+
     &__links
-      background-color: #f7f9ff
-      box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
-      border-radius: 2px
-      padding: 19px 24px
       text-align: left
       margin: 0
+      position: absolute
+      bottom: -16px
+      left: 480px
+      padding: 26px 17px 32px 24px
 
       &_title
         font-size: 1.8rem
         line-height: 2.4rem
-        color: #00005f
-        font-weight: bold
+
+      & a:first-of-type
+        margin-right: 25px
 
     &__link
-      display: inline-block
-      vertical-align: middle
+      margin-top: 11px
 
     &__join
       margin-top: 226px
@@ -394,24 +340,102 @@
 
       &_content
         padding: 30px 96px
-        display: flex
-        overflow: hidden
-        align-items: center
         justify-content: space-between
-        border-radius: 2px
-        z-index: 0
-        position: relative
+        flex-direction: row
+        background-image: linear-gradient(to left, #644ebf, #262448)
         box-shadow: 0 16px 24px 0 rgba(100, 78, 191, 0.2)
-
-        a
-          span
-            vertical-align: middle
-            display: inline-block
 
         p
           width: 35%
           margin: 0
           font-size: 4.8rem
           line-height: 6.6rem
-          font-weight: 300
-          text-align: center
+          order: 0
+
+    &__i
+
+      &-slack-big
+        left: -21px
+        top: -6px
+
+      &-telegram-big
+        right: -21px
+        top: -6px
+
+    &__container
+
+      &.desktop
+
+        .app__content
+          padding-bottom: 53px
+          flex-direction: row-reverse
+
+        .app__text
+          padding-top: 56px
+
+        .app__aside
+          padding-top: 68px
+
+      &.mobile
+        padding-top: 32px
+
+        .app__aside
+          margin-bottom: -25px
+
+        .app__content
+          justify-content: space-between
+
+        .app__text
+          order: 0
+          padding-top: 33px
+          padding-right: 110px
+          width: 50%
+          text-align: left
+
+        .app__links
+          bottom: -131px
+          background-color: white
+          padding-bottom: 30px
+
+        .app__link
+          margin-top: 14px
+
+        .app__descr
+          display: block
+
+        .app__list
+          display: block
+
+        .app__pic
+          position: relative
+          top: 77px
+          left: -8px
+
+      &.laborx
+        padding-bottom: 20px
+        margin-bottom: 0
+
+        .app__title
+          margin-bottom: 54px
+
+          &-sec
+            margin-bottom: 22px
+
+        .app__content
+          padding-top: 13px
+
+        .app__pic
+          top: -75px
+          right: auto
+          left: -50px
+
+        .app__aside
+
+          &-title
+            margin-bottom: 50px
+
+        .app__info
+
+          p
+            margin-bottom: 11px
+            line-height: 2.4rem

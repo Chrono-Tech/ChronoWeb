@@ -7,7 +7,7 @@
     width: 24px
     height: 24px
 
-@media ($desktop)
+@include media(desktop)
 
   .help
 
@@ -64,7 +64,7 @@
         content: ''
         width: 18px
         height: 18px
-        background: no-repeat center url("../i/magnify.svg")
+        background: no-repeat center url("../i/svg/magnify.svg")
         background-size: contain
         position: absolute
         z-index: -1
@@ -132,7 +132,7 @@
           margin-top: -4px
           width: 12px
           height: 8px
-          background: url('../i/chevron.svg') no-repeat center
+          background: url('../i/svg/chevron.svg') no-repeat center
           background-size: contain
           transition: transform $fast
 

@@ -1,28 +1,14 @@
 .ceo
 
-  a:hover
-    text-decoration: underline
+  .wrap
+    position: relative
 
   &__container
     background: $white
-    box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2);
+    box-shadow: 0 16px 24px 0 rgba(118, 143, 255, 0.2)
     position: relative
     border-radius: 2px
     overflow: hidden
-
-    .wrap
-
-      &::before
-        content: ''
-        position: absolute
-        left: 0
-        right: 0
-        top: -30px
-        background: #F7F9FF
-        height: 80%
-
-    .wrap
-      position: relative
 
   &__photo
     display: block
@@ -33,22 +19,22 @@
       display: none
 
   &__inner
-    padding: 0 16px 64px
+    text-align: left
+    padding: 0 16px 30px
 
   &__name
-    font-size: 1.6rem
-    line-height: 2.4rem
-    font-weight: bold
+    font-size: 2.0rem
+    font-weight: 300
 
   &__position
-    font-size: 1.6rem
-    line-height: 2rem
+    font-size: 1.2rem
     margin-bottom: 86px
+    color: #0039cb
+    text-transform: uppercase
 
   &__message
     position: relative
     font-size: 1.6rem
-    line-height: 2rem
     font-style: italic
     font-weight: normal
 
@@ -58,11 +44,11 @@
       position: absolute
       font-size: 12rem
       opacity: .6
+      line-height: 0
       font-weight: bold
       left: -10px
       top: -15px
       z-index: 10
-      width: 100px
 
     p
       margin-bottom: 10px
@@ -70,7 +56,7 @@
       &:last-child
         margin-bottom: 0
 
-@media ($tablet)
+@include media(tablet)
 
   .ceo
 
@@ -109,7 +95,7 @@
       line-height: 2rem
       padding-left: 0
 
-@media ($desktop)
+@include media(desktop)
 
   .ceo
 
@@ -119,21 +105,16 @@
         width: auto
 
     &__inner
-      text-align: left
       padding-top: 41px
       padding-left: 47px
       padding-bottom: 20px
 
     &__name
-      font-size: 24px
-      font-weight: 300
-      color: #00005f
+      font-size: 2.4rem
       margin-bottom: 4px
 
     &__position
-      font-size: 14px
-      color: #0039cb
-      text-transform: uppercase
+      font-size: 1.4rem
 
     &__message
       padding-left: 60px

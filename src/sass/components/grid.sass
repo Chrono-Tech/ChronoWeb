@@ -1,5 +1,4 @@
 // Grid
-
 .page
   position: relative
   min-height: 100%
@@ -7,7 +6,6 @@
   overflow: hidden
 
 .wrap
-  // max-width: $max
   margin: 0 auto
   box-sizing: border-box
   padding: 0 16px
@@ -17,13 +15,13 @@
   line-height: 3.3rem
   font-weight: 300
 
-@media ($tablet)
+@include media(tablet)
 
   .wrap
     width: 580px
     padding: 0
 
-@media ($desktop)
+@include media(desktop)
 
   .wrap
     width: 1120px

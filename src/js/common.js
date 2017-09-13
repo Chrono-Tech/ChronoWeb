@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 	// Nav
-	$('.nav__i').on('click', function () {
+	$('.nav__icon').on('click', function () {
 		$('.nav__block').fadeIn(300);
 	});
 	$('.js-close-menu').on('click', function () {
@@ -209,7 +209,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	function hideModal() {
 		$job__modal.removeClass("show");
 	}
-
 
 	// Nav
 	$('.js-nav').on('click', function () {

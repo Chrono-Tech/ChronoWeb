@@ -1,7 +1,8 @@
 .header
-  min-height: 100vh
-  background: url(../i/header.jpg) no-repeat center center #5d49b2
-  background-size: cover
+  min-height: 568px
+  height: 100vh
+  background: no-repeat center center linear-gradient(197deg, #644ebf, #262448)
+  background-size: contain
   padding-bottom: 80px
   padding-top: 22px
   box-sizing: border-box
@@ -13,12 +14,9 @@
     padding-left: 38px
     position: relative
     display: block
-    position: absolute
-    left: 0
-    top: 0
     font-size: 2.3rem
     line-height: 1
-    letter-spacing: -.77px
+    letter-spacing: -.8px
     color: #D9A162
 
     &-i
@@ -83,10 +81,6 @@
         width: 300px
         height: 168px
 
-  .footer__beta
-    color: $white
-    top: -8px
-
   .wrap
     position: relative
     z-index: 0
@@ -95,9 +89,17 @@
       content: ''
       position: absolute
       z-index: -1
+      top: 235px
+      left: 0
+      width: 100%
+      height: 177px
+      background: url(../i/header_mobile.png) no-repeat center
+      background-size: contain
+
+      @include pixel-ratio('header_mobile.png')
 
   &__block
-    padding-top: 35px
+    padding-top: 70px
 
   &__title
     font-size: 1.8rem
@@ -107,14 +109,10 @@
     margin-bottom: 35px
 
     &_main
+      display: block
       font-size: 2.8rem
       line-height: normal
-
-  &__widjet
-    position: absolute
-    left: 0
-    right: 0
-    bottom: 10px
+      font-weight: 300
 
   &__video
     display: inline-block
@@ -125,6 +123,9 @@
     padding-left: 41px
     cursor: pointer
 
+  &__news
+    display: none
+
   &__i
     position: absolute
     left: 0
@@ -132,15 +133,21 @@
     width: 25px
     height: 25px
 
-  &__news
-    display: none
-
 .nav
   position: absolute
   right: 0
   top: 0
 
-@media ($tablet)
+  &__icon
+    display: block
+    top: 0
+    right: 16px
+    cursor: pointer
+    position: absolute
+    width: 20px
+    height: 20px
+
+@include media(tablet)
 
   .header
     min-height: 700px
@@ -220,6 +227,9 @@
         width: 850px
         height: 425px
         background: url(../i/header_big.png) no-repeat center
+        background-size: contain
+
+        @include pixel-ratio('header_big.png')
 
     &__block
       padding-top: 0
@@ -235,8 +245,7 @@
       font-size: 1.6rem
       line-height: 2rem
 
-
-@media ($desktop)
+@include media(desktop)
 
   .header
 
@@ -246,8 +255,12 @@
         width: 850px
         height: 425px
         background: url(../i/header_big.png) no-repeat center
+        background-size: contain
         top: 141px
+        left: auto
         right: -60px
+
+        @include pixel-ratio('header_big.png')
 
     &__video
 
@@ -269,10 +282,15 @@
     &__title
 
       &_main
-        display: block
         font-size: 6.3rem
         margin-bottom: 9px
         font-weight: 300
 
     &__block
       margin-top: 200px
+      padding-top: 35px
+
+  .nav
+
+    &__icon
+      display: none
